@@ -98,7 +98,7 @@ Route::group(["middleware" => ["UserLogChecker"]], function () {
 ##################################################
 #   Add Products Routes : VICKY CHHETRI          # 
 ##################################################
-
+// Add Product Page
 Route::get('/Admin/Add-Product-Info', 'App\Http\Controllers\ProductController@index');
 
 
