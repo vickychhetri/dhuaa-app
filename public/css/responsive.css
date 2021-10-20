@@ -1,0 +1,1270 @@
+/* Large Layout: 1200px. */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        padding: 0;
+    }
+    .container-fluid {
+        padding: 0;
+    }
+}
+
+
+/* Medium screen  */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /*==== Start call to action area  css ====*/
+    .call-to-action-area .box {
+        width: 870px;
+    }
+    /*==== End call to action area  css ====*/
+    /*===Start trusted service area  css====*/
+    .trusted-service-area .single-item .content {
+        padding-left: 20px;
+    }
+    .trusted-service-area .single-item .icon-holder span::before {
+        top: -41px;
+    }
+    .trusted-service-area .single-item .content h3 {
+        font-size: 20px;
+    }
+    /*===End trusted service area  css ====*/
+    /*===Start best service area  css ====*/
+    .best-service-area .top-bg {
+        width: 900px;
+    }
+    .best-service-area .single-item .title h3 {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    /*===End best service area  css ====*/
+    /*===Start wheel work area  css ====*/
+    .wheel-work-area {
+        padding-bottom: 80px;
+    }
+    .wheel-work-left .title h1::after {
+        width: 300px;
+    }
+    .wheel-work-left .content {
+        padding-top: 30px;
+    }
+    .wheel-work-left .single-list-item {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .wheel-work-left .button a {
+        margin-top: 15px;
+    }
+    /*===End wheel work area  css ====*/
+    /*===Start meet our specialist area  css ====*/
+    .meet-our-specialist-area {
+        padding-bottom: 50px;
+    }
+    .meet-our-specialist-area .single-item {
+        padding-bottom: 40px;
+    }
+    /*===Start meet our specialist area  css ====*/
+    /*===Start our latest news area  css ====*/
+    .single-blog-post .content-box .date-box {
+        margin-top: 5px;
+    }
+    /*===End our latest news area  css ====*/
+    /*===Start apply for job area  css ====*/
+    .apply-for-job-area h2 {
+        font-size: 20px;
+    }
+    /*===End apply for job area  css ====*/
+    /*===Start fact counter area  css ====*/
+    .fact-counter ul li {
+        padding: 70px 14px 63px;
+    }
+    .fact-counter ul li .text h1 {
+        font-size: 30px;
+        margin: 0 0 2px;
+    }
+    .fact-counter ul li .icon {
+        padding-left: 10px;
+    }
+    .fact-counter ul li .icon span::before {
+        font-size: 45px;
+    }
+    /*===End fact counter area  css ====*/
+    /*===Start combo package area  css ====*/
+    .combo-package-area .text h1 {
+        font-size: 25px;
+    }
+    /*===End combo package area  css ====*/
+    /*===Start large blog content area  css ====*/
+    .large-blog-post .single-blog-post ul {
+        padding-left: 20px;
+        padding-right: 0;
+        width: 515px;
+    }
+    .large-blog-post .single-blog-post .content-box .date-box {
+        margin-top: 55px;
+    }
+    /*===End large blog content area  css ====*/
+    /*==== Start manasory blog with sidebar area css ====*/
+    .manasory-blog-ws-area .manasory-blog-post-v2 {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-right: 0;
+    }
+    /*==== End manasory blog with sidebar area css ====*/
+    /*==== Start write your comment area css ====*/
+    .write-your-comment-form input[type="text"] {
+        width: 442px;
+        margin-bottom: 30px;
+    }
+    /*==== End write your comment area css ====*/
+    /*==== Start blog details content area css ====*/
+    .blog-details-content .single-blog-post ul {
+        padding-right: 10px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .img-box {
+        display: block !important;
+        float: left;
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .img-box img {
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .text-box {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .title {
+        display: inline-block !important;
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .title h5 {
+        margin: 0 0 10px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .social-icon {
+        padding-left: 0px;
+    }
+    /*==== End blog details content area css ====*/
+    /*==== Start google map area css ====*/
+    .google-map-area .container-fluid {
+        padding: 0;
+    }
+    /*==== End google map area css ====*/
+    /*==== Start services package area css ====*/
+    .single-price-box.single-package.top {
+        position: relative;
+        top: -84px;
+    }
+    /*==== End services package area css ====*/
+    /*==== Start full range services area css ====*/
+    .full-range-services-area .single-item .inner-content {
+        padding: 60px 10px 53px;
+    }
+    /*==== End full range services area css ====*/
+    /*==== Start services single area css ====*/
+    .services-single-content .other-services-content .sec-title .decor::after {
+        left: 19px;
+        width: 400px;
+    }
+    .services-single-content .working-topics-content {
+        margin-left: 15px;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    .pricing-plan .table-body td {
+        padding: 15px 20px;
+    }
+    .pricing-plan .table-heading th {
+        padding: 17px 20px;
+    }
+    .single-services-sidebar .single-item .single-service-sidebar-carousel .service-carousel-control {
+        top: -335px;
+    }
+    /*==== End services single area css ====*/
+    /*==== Start services single area ver two css ====*/
+    .working-under-content {
+        margin-left: 0;
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+    /*==== End services single area ver two css ====*/
+    /*==== Start shop section css ====*/
+    .single-shop-item a h3 {
+        font-size: 14px;
+    }
+    /*==== End shop section css ====*/
+    /*==== Start shop section with sidebar css ====*/
+    .shop-section .sidebar {
+        margin-top: 90px;
+    }
+    /*==== End shop section with sidebar css ====*/
+    /*==== Start login register area css ====*/
+    .login-register-area {
+        padding-bottom: 90px;
+        padding-top: 89px;
+    }
+    .login-register-area .form a.forgot-password {
+        float: left;
+        margin: 23px 0 0;
+    }
+    .login-register-area .form h6 {
+        float: left;
+    }
+    /*==== End login register area css ====*/
+    /*==== Start shop single css ====*/
+    .shop-section.single-shop {
+        padding-bottom: 28px;
+        padding-top: 90px;
+    }
+    .magnify {
+        display: block;
+        position: relative;
+    }
+    .shop-section.single-shop .sidebar {
+        margin-top: 40px;
+    }
+    /*==== End shop single css ====*/
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*==== Start call to action area css ====*/
+    .call-to-action-area .box {
+        width: 650px;
+    }
+    .call-to-action-area .box h2 {
+        padding-left: 0;
+        text-align: center;
+        top: -55px;
+    }
+    .call-to-action-area .box a {
+        left: 0;
+        margin: 0 auto;
+        top: -45px;
+    }
+    /*==== End call to action area css ====*/
+    /*==== Start quality service area css ====*/
+    .quality-service-area .service-content p {
+        margin: 0 0 60px;
+    }
+    .quality-service-area .service-client-carousel {
+        padding-top: 60px;
+    }
+    /*==== End quality service area css ====*/
+    /*====Start trusted service area css====*/
+    .trusted-service-area .single-item {
+        padding-bottom: 35px;
+    }
+    .trusted-service-area .single-item .icon-holder span::before {
+        top: -5px;
+    }
+    /*====End trusted service area css====*/
+    /*==== Start best service area css====*/
+    .best-service-area .top-bg {
+        width: 700px;
+    }
+    .best-service-area .single-item.middle {
+        margin: 0 auto;
+        width: 345px;
+        padding-top: 35px;
+    }
+    /*==== End best service area css====*/
+    /*==== Start wheel work area css====*/
+    .wheel-work-area {
+        padding-bottom: 80px;
+    }
+    .wheel-work-left .title h1::after {
+        width: 110px;
+    }
+    .wheel-work-left .single-list-item {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .wheel-work-left .content h3 {
+        margin: 20px 0 12px;
+    }
+    .wheel-work-left .button a {
+        margin-top: 15px;
+    }
+    .wheel-work-right {
+        padding-bottom: 30px;
+    }
+    /*==== End wheel work area css====*/
+    /*====Start faq and gallery area css====*/
+    .work-gallery-right {
+        overflow: hidden;
+        padding-top: 90px;
+    }
+    /*====End faq and gallery area css====*/
+    /*===Start meet our specialist area  css ====*/
+    .meet-our-specialist-area {
+        padding-bottom: 50px;
+    }
+    .meet-our-specialist-area .single-item {
+        padding-bottom: 40px;
+    }
+    .meet-our-specialist-area .single-item .text p {
+        padding-left: 15px;
+        font-size: 13px;
+    }
+    /*===Start meet our specialist area  css ====*/
+    /*===Start our latest news area  css ====*/
+    .single-blog-post .content-box .date-box {
+        margin-top: 55px;
+    }
+    .single-blog-post ul {
+        padding: 12px 25px 14px 20px;
+    }
+    .single-blog-post.middle {
+        width: 345px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    /*===End our latest news area  css ====*/
+    /*===Start free appoinment area  css ====*/
+    .free-appoinment-form .select-field select {
+        background: #ffffff url("../img/resources/dropdown.png") no-repeat scroll 98% 50%;
+    }
+    .free-appoinment-form .select-field select:hover {
+        background: url(../img/resources/dropdown-red.png) no-repeat 98% 50% #ffffff;
+    }
+    /*===End free appoinment area  css ====*/
+    /*===Start footer-area css ====*/
+    .footer-middle {
+        padding-bottom: 13px;
+        padding-top: 52px;
+    }
+    .single-footer-widget {
+        padding-bottom: 50px;
+    }
+    .single-footer-widget .carousel-indicators {
+        bottom: -45px;
+    }
+    /*===End footer-area css ====*/
+    /*===Start apply for job area  css ====*/
+    .apply-for-job-area h2 {
+        font-size: 17px;
+    }
+    /*===End apply for job area  css ====*/
+    /*===Start customer area  css ====*/
+    .customer-support {
+        margin-top: 30px;
+        text-align: center;
+    }
+    /*===End customer area  css ====*/
+    /*===Start years tab area  css ====*/
+    .years-tab-area .years-tab {
+        padding-top: 50px;
+    }
+    .working-time {
+        margin-top: 35px;
+    }
+    /*===End years tab area  css ====*/
+    /*===Start fact counter area  css ====*/
+    .fact-counter ul li {
+        padding: 70px 64px 63px;
+        border-left: none;
+    }
+    .fact-counter ul li:last-child {
+        border-right: none;
+    }
+    /*===End fact counter area  css ====*/
+    /*===Start ask your question area  css ====*/
+    .faq-content-area .accordion .acc-btn {
+        font-size: 16px;
+    }
+    .ask-your-question-form input[type="text"] {
+        margin-bottom: 30px;
+    }
+    /*===End ask your question area  css ====*/
+    /*===Start single price box  css ====*/
+    .single-price-box.middle {
+        margin: 0 auto;
+        padding-top: 40px;
+        width: 345px;
+    }
+    /*===End single price box  css ====*/
+    /*===Start combo package area  css ====*/
+    .combo-package-area {
+        padding-bottom: 60px;
+        padding-top: 43px;
+    }
+    /*===End combo package area  css ====*/
+    /*===Start large blog content area  css ====*/
+    .large-blog-post .single-blog-post ul {
+        padding-left: 20px;
+        padding-right: 0;
+        width: 620px;
+    }
+    .large-blog-post .single-blog-post .content-box .date-box {
+        margin-top: 55px;
+    }
+    .sidebar-wrapper {
+        padding-top: 80px;
+    }
+    /*===End large blog content area  css ====*/
+    /*===Start list blog content area css ====*/
+    .list-blog-post .single-blog-post .content-box {
+        padding-left: 100px;
+        padding-top: 35px;
+    }
+    .list-blog-post .single-blog-post .content-box ul {
+        margin: -7px 0 15px;
+    }
+    /*===End list blog content area css ====*/
+    /*==== Start manasory blog content area css ====*/
+    .manasory-blog-content-area .manasory-blog-post .single-blog-manasory-item.span-4 {
+        width: 50%;
+    }
+    /*==== End manasory blog content area css ====*/
+    /*==== Start gallery masonary v1 area css ====*/
+    .gallery-masonary-v1-area .single-gallery-masonary-item.span-3 {
+        width: 50%;
+    }
+    /*==== End gallery masonary v1 area css ====*/
+    /*==== Start gallery masonary v2 area css ====*/
+    .gallery-masonary-v2-area .single-gallery-masonary-item.span-4 {
+        width: 50%;
+    }
+    /*==== End gallery masonary v2 area css ====*/
+    /*==== Start manasory blog with sidebar area css ====*/
+    .manasory-blog-ws-area .manasory-blog-post-v2 {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-right: 0;
+    }
+    /*==== End manasory blog with sidebar area css ====*/
+    /*==== Start testimonial page css ====*/
+    .testimonial-page .testimonial-masonary .masonary-testimonial-single-item.span-4 {
+        width: 50%;
+    }
+    /*==== End testimonial page css ====*/
+    /*==== Start write your comment area css ====*/
+    .write-your-comment-form input[type="text"] {
+        margin-bottom: 30px;
+        width: 332px;
+    }
+    /*==== End write your comment area css ====*/
+    /*==== Start blog details content area css ====*/
+    .blog-details-content .single-blog-post ul {
+        padding-right: 115px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .text-box ul li {
+        display: block;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .img-box {
+        display: block !important;
+        float: left;
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .img-box img {
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .text-box {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .title {
+        display: inline-block !important;
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .title h5 {
+        margin: 0 0 10px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .social-icon {
+        padding-left: 0px;
+    }
+    .leave-reply-form form input[type="text"] {
+        margin-bottom: 30px;
+    }
+    .leave-reply-form form textarea {
+        margin-top: 0px;
+    }
+    /*==== End blog details content area css ====*/
+    /*==== Start gallery single area css ====*/
+    .gallery-items .gallery-single-item .right-content {
+        margin-top: 60px;
+        overflow: hidden;
+    }
+    /*==== End gallery single area css ====*/
+    /*==== Start contact area css ====*/
+    .contact-area .contact-form {
+        margin-top: 80px;
+    }
+    /*==== End contact area css ====*/
+    /*==== Start google map area css ====*/
+    .google-map-area .container-fluid {
+        padding: 0;
+    }
+    /*==== End google map area css ====*/
+    /*==== Start services package area css ====*/
+    .services-package-area .single-package {
+        margin-bottom: 40px;
+    }
+    .single-price-box.single-package.top {
+        top: 0;
+    }
+    /*==== End services package area css ====*/
+    /*==== Start full range services area css ====*/
+    .full-range-services-area .single-item .inner-content {
+        padding: 60px 10px 53px;
+    }
+    .full-range-services-area .single-item .inner-content .content h3 {
+        font-size: 15px;
+    }
+    /*==== End full range services area css ====*/
+    /*==== Start services single area css ====*/
+    .services-single-content .other-services-content .sec-title .decor::after {
+        left: 19px;
+        width: 500px;
+    }
+    .services-single-content .working-topics-content {
+        margin-left: 15px;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    .single-services-sidebar {
+        padding-top: 70px;
+    }
+    .single-services-sidebar .single-item .single-service-sidebar-carousel .service-carousel-control {
+        top: -335px;
+    }
+    /*==== End services single area css ====*/
+    /*==== Start services single area ver two css ====*/
+    .working-under-content {
+        margin-left: 0;
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+    /*==== End services single area ver two css ====*/
+    /*==== Start services single area ver three css ====*/
+    .services-single-area.ver-three .brake-repair-items .single-item {
+        margin-bottom: 50px;
+    }
+    .services-single-area.ver-three .services-single-content .pricing-plan-area {
+        padding-top: 20px;
+    }
+    /*==== End services single area ver three css ====*/
+    /*==== Start shop section with sidebar css ====*/
+    .shop-section .sidebar {
+        margin-top: 90px;
+    }
+    /*==== End shop section with sidebar css ====*/
+    /*==== Start login register area css ====*/
+    .login-register-area {
+        padding-bottom: 90px;
+        padding-top: 89px;
+    }
+    .login-register-area .form a.forgot-password {
+        float: left;
+        margin: 23px 0 0;
+    }
+    .login-register-area .form.register {
+        padding-top: 60px;
+    }
+    .login-register-area .form h6 {
+        float: left;
+    }
+    /*==== End login register area css ====*/
+    /*==== Start shop single css ====*/
+    .shop-section.single-shop {
+        padding-bottom: 28px;
+        padding-top: 90px;
+    }
+    .single-shop-content .content h2 {
+        font-size: 21px;
+        margin: -3px 0 10px;
+    }
+    .review-tab-content .description-content {
+        overflow: hidden;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .review-tab-content .description-content ul {
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .shop-section.single-shop .sidebar {
+        margin-top: 40px;
+    }
+    /*==== End shop single css ====*/
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    
+    /*==== Start call to action area css ====*/
+    .call-to-action-area .box {
+        width: 235px;
+    }
+    .call-to-action-area .box h2 {
+        font-size: 18px;
+        padding-left: 0;
+        text-align: center;
+        top: -65px;
+    }
+    .call-to-action-area .box a {
+        left: 0;
+        margin: 0 auto;
+        top: -50px;
+        width: 180px;
+    }
+    /*==== End call to action area css ====*/
+    /*==== Start quality service area css ====*/
+    .quality-service-area .service-content p {
+        margin: 0 0 60px;
+    }
+    .quality-service-area .service-content a {
+        margin-bottom: 5px;
+    }
+    .quality-service-area .service-client-carousel {
+        padding-top: 60px;
+    }
+    .service-client-carousel .single-item .content {
+        padding-left: 20px;
+    }
+    /*==== End quality service area css ====*/
+    /*==== Start trusted service area css ====*/
+    .trusted-service-area .single-item {
+        padding-bottom: 35px;
+    }
+    .trusted-service-area .single-item .icon-holder span::before {
+        top: -17px;
+    }
+    .trusted-service-area .single-item .content {
+        padding-left: 20px;
+    }
+    /*==== End trusted service area css ====*/
+    /*==== Start best service area css ====*/
+    .best-service-area .top-bg {
+        width: 235px;
+    }
+    .best-service-area {
+        background: #f6f6f6 none repeat scroll 0 0;
+        padding-bottom: 17px;
+        padding-top: 0;
+    }
+    .best-service-area .single-item {
+        padding-bottom: 35px;
+    }
+    /*==== End best service area css ====*/
+    /*==== Start wheel work area css ====*/
+    .wheel-work-area {
+        padding-bottom: 80px;
+    }
+    .wheel-work-left {
+        padding-bottom: 50px;
+    }
+    .wheel-work-left .title h1::after {
+        width: 0;
+    }
+    .work-gallery-right .work-gallery-items .single-item {
+        float: none;
+    }
+    .wheel-work-left .single-list-item {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .wheel-work-left .content h3 {
+        margin: 20px 0 12px;
+    }
+    .wheel-work-left .button a {
+        margin-top: 15px;
+    }
+    .wheel-work-right {
+        padding-bottom: 30px;
+    }
+    .wheel-work-right .single-other-service-list .icon-holder {
+        width: 70px;
+    }
+    .wheel-work-right .single-other-service-list .title h3 {
+        font-size: 16px;
+    }
+    /*==== End wheel work area css ====*/
+    /*====Start faq and gallery area css====*/
+    .work-gallery-right {
+        overflow: hidden;
+        padding-top: 90px;
+    }
+    /*====End faq and gallery area css====*/
+    /*===Start meet our specialist area  css ====*/
+    .meet-our-specialist-area {
+        padding-bottom: 50px;
+    }
+    .meet-our-specialist-area .single-item {
+        padding-bottom: 40px;
+    }
+    /*===Start meet our specialist area  css ====*/
+    /*===Start our latest news area  css ====*/
+    .our-latest-news-area {
+        padding-bottom: 50px;
+    }
+    .our-latest-news-area .single-blog-post {
+        padding-bottom: 50px;
+    }
+    .single-blog-post .content-box {
+        padding-top: 50px;
+    }
+    .single-blog-post .content-box .date-box {
+        margin-top: 5px;
+    }
+    /*===End our latest news area  css ====*/
+    /*===Start free appoinment area  css ====*/
+    .free-appoinment-form .select-field select {
+        background: #ffffff url("../img/resources/dropdown.png") no-repeat scroll 98% 50%;
+    }
+    .free-appoinment-form .select-field select:hover {
+        background: url(../img/resources/dropdown-red.png) no-repeat 98% 50% #ffffff;
+    }
+    /*===End free appoinment area  css ====*/
+    /*===Start footer-area css ====*/
+    .footer-middle {
+        padding-bottom: 33px;
+        padding-top: 52px;
+    }
+    .single-footer-widget {
+        padding-bottom: 50px;
+    }
+    .single-footer-widget .carousel-indicators {
+        bottom: -35px;
+    }
+    .copy-right p {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .footer-social-link ul {
+        float: none;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    /*===End footer-area css ====*/
+    /*===Start breadcrumb bottom area css ====*/
+    .breadcrumb-bottom-area ul {
+        text-align: center;
+    }
+    .breadcrumb-bottom-area p {
+        float: none;
+        text-align: center;
+    }
+    /*===End breadcrumb bottom area css ====*/
+    /*===Start not found content area css ====*/
+    .notfound-content-area {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .notfound-content-area .content .search-form input {
+        width: 290px;
+    }
+    /*===End not found content area css ====*/
+    /*===Start apply for job area  css ====*/
+    .apply-for-job-area h2 {
+        font-size: 20px;
+        padding-top: 0;
+    }
+    .apply-for-job-area a {
+        margin-top: 20px;
+    }
+    /*===End apply for job area  css ====*/
+    /*===Start customer area  css ====*/
+    .customers-info .img-holder {
+        display: block !important;
+        float: none;
+        width: 100%;
+    }
+    .customers-info .img-holder img {
+        width: 100%;
+    }
+    .customers-info .content {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .customer-support {
+        margin-top: 30px;
+        text-align: center;
+    }
+    /*===End customer area  css ====*/
+    /*===Start years tab area  css ====*/
+    .years-tab-area {
+        padding-bottom: 90px;
+    }
+    .years-tab .tab-menu {
+        display: block !important;
+        float: none;
+        width: 100%;
+    }
+    .years-tab .tab-content {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+    .working-time {
+        margin-top: 35px;
+    }
+    /*===End years tab area  css ====*/
+    /*===Start fact counter area  css ====*/
+    .fact-counter {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .fact-counter ul li {
+        border-left: medium none;
+        float: none;
+        margin: 0 auto;
+        padding: 40px 30px 33px;
+        width: 300px;
+    }
+    .fact-counter ul li:last-child {
+        border-right: none;
+    }
+    /*===End fact counter area  css ====*/
+    /*===Start testimonial area  css ====*/
+    .testimonial-area {
+        padding-bottom: 50px;
+        padding-top: 90px;
+    }
+    .single-testimonial-item .content {
+        background: rgba(0, 0, 0, 0) url("../img/testimonial/content-bg.png") no-repeat scroll 0 0 / 100% 100%;
+    }
+    .single-testimonial-item {
+        padding-bottom: 40px;
+    }
+    /*===End testimonial area  css ====*/
+    /*===Start brand area  css ====*/
+    .brand-area .owl-theme .owl-nav {
+        display: none;
+    }
+    /*===End brand area  css ====*/
+    /*===Start ask your question area  css ====*/
+    .faq-content-area .accordion .acc-btn {
+        font-size: 15px;
+        padding-right: 50px;
+    }
+    .ask-your-question-form input[type="text"] {
+        margin-bottom: 30px;
+    }
+    /*===End ask your question area  css ====*/
+    /*===Start single price box  css ====*/
+    .pricing-table-area {
+        padding-bottom: 50px;
+        padding-top: 115px;
+    }
+    .single-price-box {
+        padding-bottom: 40px;
+    }
+    /*===End single price box  css ====*/
+    /*===Start combo package area  css ====*/
+    .combo-package-area {
+        padding-bottom: 56px;
+        padding-top: 30px;
+    }
+    .combo-package-area .button {
+        float: left !important;
+    }
+    .combo-package-area .button a {
+        top: 20px;
+    }
+    /*===End combo package area  css ====*/
+    /*===Start large blog content area  css ====*/
+    .large-blog-post .single-blog-post ul {
+        padding-left: 15px;
+        padding-right: 0;
+        top: -50px;
+        width: 290px;
+    }
+    .large-blog-post .single-blog-post .content-box {
+        padding-top: 100px;
+    }
+    .large-blog-post .single-blog-post .content-box .date-box {
+        margin-top: 5px;
+    }
+    .large-blog-post .single-blog-post .img-holder .overlay .image-view .icon-holder a span::before {
+        font-size: 30px;
+        position: relative;
+        top: -10px;
+    }
+    .paginations ul li a {
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+    }
+    .sidebar-wrapper {
+        padding-top: 80px;
+    }
+    /*===End large blog content area  css ====*/
+    /*===Start list blog content area css ====*/
+    .single-blog-post .content-box {
+        padding-top: 35px;
+    }
+    .list-blog-post .single-blog-post .date-and-img-box .img-holder {
+        margin-left: 20px;
+    }
+    .list-blog-post .single-blog-post .content-box ul {
+        margin: -7px 0 15px;
+    }
+    /*===End list blog content area css ====*/
+    /*==== Start manasory blog content area css ====*/
+    .manasory-blog-content-area .manasory-blog-post .single-blog-manasory-item.span-4 {
+        width: 100%;
+    }
+    .manasory-blog-post .single-blog-manasory-item .single-blog-post .content-box {
+        padding-top: 50px;
+    }
+    .manasory-blog-post .single-blog-manasory-item .single-blog-post.video-gallery .content-box {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+    /*==== End manasory blog content area css ====*/
+    /*==== Start manasory blog with sidebar area css ====*/
+    .manasory-blog-post-v2 .single-blog-manasory-item.span-6 {
+        width: 100% !important;
+    }
+    .manasory-blog-post-v2 .single-blog-manasory-item .single-blog-post .content-box {
+        padding-top: 50px;
+    }
+    .manasory-blog-post-v2 .single-blog-manasory-item .single-blog-post.video-gallery .content-box {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+    /*==== End manasory blog with sidebar area css ====*/
+    /*==== Start gallery masonary v1 area css ====*/
+    .gallery-masonary-v1-area .single-gallery-masonary-item.span-3 {
+        width: 100%;
+    }
+    /*==== End gallery masonary v1 area css ====*/
+    /*==== Start gallery masonary v2 area css ====*/
+    .gallery-masonary-v2-area .single-gallery-masonary-item.span-4 {
+        width: 100%;
+    }
+    /*==== End gallery masonary v2 area css ====*/
+    /*==== Start manasory blog with sidebar area css ====*/
+    .manasory-blog-ws-area .manasory-blog-post-v2 {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-right: 0;
+    }
+    /*==== End manasory blog with sidebar area css ====*/
+    /*==== Start testimonial page css ====*/
+    .testimonial-page .testimonial-masonary .masonary-testimonial-single-item.span-4 {
+        width: 100%;
+    }
+    /*==== End testimonial page css ====*/
+    /*==== Start write your comment area css ====*/
+    .write-your-comment-form input[type="text"] {
+        width: 290px;
+        margin-bottom: 20px;
+    }
+    /*==== End write your comment area css ====*/
+    /*==== Start blog details content area css ====*/
+    .blog-details-content .single-blog-post ul {
+        padding-right: 0px;
+    }
+    .single-blog-post ul li {
+        border-right: none;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .text-box ul li {
+        display: block;
+    }
+    .blog-details-content .single-blog-post .content-box .content {
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    .blog-details-content .single-blog-post .content-box .content h3 {
+        font-size: 20px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .img-box {
+        display: block !important;
+        float: left;
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .img-box img {
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .caption-and-img-box .text-box {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .title {
+        display: inline-block !important;
+        width: 100%;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .title h5 {
+        margin: 0 0 10px;
+    }
+    .blog-details-content .single-blog-post .content-box .content .social-like-box .social-icon {
+        padding-left: 0px;
+    }
+    .author-box .img-holder {
+        display: block !important;
+        width: 100%;
+    }
+    .author-box .text {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .comment-box .img-box {
+        display: block !important;
+        width: 100%;
+    }
+    .comment-box .text-box {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .leave-reply-form form input[type="text"] {
+        margin-bottom: 30px;
+    }
+    .leave-reply-form form textarea {
+        margin-top: 0px;
+    }
+    /*==== End blog details content area css ====*/
+    /*==== Start gallery single area css ====*/
+    .gallery-items .gallery-single-item .right-content {
+        margin-top: 60px;
+        overflow: hidden;
+    }
+    /*==== End gallery single area css ====*/
+    /*==== Start contact area css ====*/
+    .contact-area .contact-form {
+        margin-top: 80px;
+    }
+    /*==== End contact area css ====*/
+    /*==== Start google map area css ====*/
+    #contact-page-google-map {
+        height: 320px;
+        width: 100%;
+    }
+    /*==== End google map area css ====*/
+    /*==== Start google map area css ====*/
+    .google-map-area .container-fluid {
+        padding: 0;
+    }
+    /*==== End google map area css ====*/
+    /*==== Start services package area css ====*/
+    .services-package-area .single-package {
+        margin-bottom: 40px;
+    }
+    .single-price-box.single-package.top {
+        top: 0;
+    }
+    /*==== End services package area css ====*/
+    /*==== Start full range services area css ====*/
+    .full-range-services-area .single-item .inner-content {
+        padding: 60px 20px 53px;
+    }
+    /*==== End full range services area css ====*/
+    /*==== Start services single area css ====*/
+    .services-single-content .other-services-content .sec-title h1 {
+        font-size: 22px;
+    }
+    .services-single-content .other-services-content .sec-title .decor::after {
+        left: 19px;
+        width: 60px;
+    }
+    .services-single-content .working-topics-content {
+        margin-left: 15px;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    .single-services-sidebar {
+        padding-top: 70px;
+    }
+    .single-services-sidebar .single-item .single-service-sidebar-carousel .service-carousel-control {
+        top: -275px;
+    }
+    /*==== End services single area css ====*/
+    /*==== Start services single area ver two css ====*/
+    .working-under-content {
+        margin-left: 0;
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+    /*==== End services single area ver two css ====*/
+    /*==== Start services single area ver three css ====*/
+    .services-single-area.ver-three .brake-repair-items .single-item {
+        margin-bottom: 50px;
+    }
+    .services-single-area.ver-three .services-single-content .pricing-plan-area {
+        padding-top: 20px;
+    }
+    /*==== End services single area ver three css ====*/
+    /*==== Start shop section css ====*/
+    .single-shop-item .img-box {
+        text-align: center;
+    }
+    .shop-section .post-pagination li {
+        height: 40px;
+        width: 40px;
+    }
+    .shop-section .post-pagination li a {
+        line-height: 40px;
+        padding: 0;
+    }
+    /*==== End shop section css ====*/
+    /*==== Start shop section with sidebar css ====*/
+    .shop-section .sidebar {
+        margin-top: 90px;
+    }
+    /*==== End shop section with sidebar css ====*/
+    /*==== Start login register area css ====*/
+    .login-register-area {
+        padding-bottom: 90px;
+        padding-top: 89px;
+    }
+    .login-register-area .form a.forgot-password {
+        float: left;
+        margin: 23px 0 0;
+    }
+    .login-register-area .form.register {
+        padding-top: 60px;
+    }
+    .login-register-area .form h6 {
+        float: left;
+    }
+    /*==== End login register area css ====*/
+    /*==== Start shop single css ====*/
+    .shop-section.single-shop {
+        padding-bottom: 28px;
+        padding-top: 90px;
+    }
+    .related-product .sec-title h1 {
+        font-size: 22px;
+    }
+    .single-shop-content .img-holder {
+        margin-right: 0;
+    }
+    .single-shop-content .img-holder img {
+        width: 100%;
+    }
+    .magnify {
+        display: block;
+    }
+    .single-shop-content .content {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    .review-tab-content .description-content {
+        overflow: hidden;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .review-tab-content .description-content ul {
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .review-tab-content .single-review-content .img-box {
+        position: static;
+    }
+    .review-box-content .tab-menu li a {
+        width: 125px;
+    }
+    .review-tab-content .single-review-content {
+        padding-left: 0;
+        position: static;
+    }
+    .review-tab-content .single-review-content .content-box {
+        padding-left: 0;
+        padding-top: 25px;
+    }
+    .review-tab-content .single-review-content.left .content-box {
+        padding-left: 0;
+    }
+    .shop-section.single-shop .sidebar {
+        margin-top: 40px;
+    }
+    /*==== End shop single css ====*/
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*==== Start call to action area css ====*/
+    .call-to-action-area .box {
+        width: 350px;
+    }
+    .call-to-action-area .box h2 {
+        padding-left: 0;
+        text-align: center;
+        top: -65px;
+        font-size: 20px;
+    }
+    .call-to-action-area .box a {
+        left: 0;
+        margin: 0 auto;
+        top: -55px;
+    }
+    /*==== End call to action area css ====*/
+    /*==== Start best service area css ====*/
+    .best-service-area .top-bg {
+        width: 280px;
+    }
+    /*==== End best service area css ====*/
+}
+
+
+
+
+@media (max-width: 1024px) {
+	.header-lower.navbar .navbar-nav {padding-right: 0; text-align: center; width: 100%; }
+	.header-lower.navbar .navbar-nav > li {display: inline-block; float: none; padding: 0 0 8px; }
+	.header-lower .navbar-brand,
+	.header-lower .appoinment {
+		transition: margin-top .4s ease,
+					opacity .4s ease,
+					visibility .4s ease;
+	}
+	.stricky-fixed .header-lower .navbar-brand,
+	.stricky-fixed .header-lower .appoinment {margin-top: -102px; opacity: 0; visibility: hidden; }
+}
+
+@media (max-width: 768px) {
+	.header-top .header-top-content #polyglotLanguageSwitcher {margin-left: 0;}
+	.header-top .header-contact-info {text-align: center;}
+	.main-header.stricky {position: relative;background: #000;}
+	.main-header.stricky-fixed {position: fixed;background: #000;}
+	.stricky + section, .stricky + div {margin: 0;}
+	.stricky-fixed .header-lower .navbar-brand,
+	.stricky-fixed .header-lower .appoinment {margin-top: -120px;}
+	.main-header.stricky-fixed .header-top {margin-top: -72px;}
+	.header-lower.navbar .navbar-nav > li {padding: 15px 0 23px; }
+}
+@media (max-width: 640px) {
+	.header-lower.navbar .navbar-toggle {background: #ba0913 none repeat scroll 0 0; border: 1px solid #ba0913; border-radius: 4px; float: right; margin: 29px 0; padding: 13px 15px; position: relative; }
+	.stricky-fixed .header-lower .navbar-brand {margin-top: 0;visibility: visible;opacity: 1;}
+	.header-lower.navbar .appoinment {display: none;}
+	.header-lower.navbar .navbar-toggle .icon-bar {background: #fff;}
+	.stricky-fixed .header-lower .navbar-brand {padding: 0;}
+	.stricky-fixed .header-lower .navbar-brand img {width: 200px; margin-top: 6px; }
+	.stricky-fixed .header-lower.navbar .navbar-toggle {margin: 10px 0px 20px;}
+	.header-lower.navbar .navbar-nav > li {display: block; float: none; padding: 0; text-align: left;}
+	.header-lower.navbar .navbar-nav {margin: 0;}
+	.header-lower.navbar .navbar-collapse {padding: 0;text-align: left;max-height: 75vh;background: #BA0913;border: none;}
+	.header-lower.navbar.navbar-default .navbar-nav > li > a {font-size: 14px;color: #fff;padding-top: 15px;padding-bottom: 15px;text-transform: uppercase;font-weight: bold;border-bottom: 1px solid rgba(255, 255, 255, 0.25);}
+	.header-lower.navbar.navbar-default .navbar-nav > li:last-child > a {border-bottom: 0;}
+	.header-lower.navbar.navbar-default .navbar-nav .open .dropdown-menu {background: #000;}
+	.header-lower.navbar.navbar-default .navbar-nav .open .dropdown-menu > li > a {font-size: 14px;color: #fff;padding-top: 15px;padding-bottom: 15px;text-transform: uppercase;font-weight: bold;border-bottom: 1px solid rgba(255, 255, 255, 0.25);}
+	.header-lower.navbar.navbar-default .navbar-nav .open .dropdown-menu > li:last-child > a {border-bottom: 0;}
+	.header-lower.navbar.navbar-default .navbar-nav li.dropdown > a {position: relative;}
+	.header-lower.navbar.navbar-default .navbar-nav li.dropdown > a::after {background: #000 none repeat scroll 0 0; border: 0px solid #fff; bottom: 0; color: #fff; content: ""; font-family: "FontAwesome"; height: 35px; position: absolute; right: 15px; width: 35px; top: 7px; text-align: center; line-height: 35px; font-size: 17px; border-radius: 4px; }
+	.header-lower.navbar.navbar-default .navbar-nav > .active > a, 
+	.header-lower.navbar.navbar-default .navbar-nav > .active > a:focus, 
+	.header-lower.navbar.navbar-default .navbar-nav > .active > a:hover,
+	.header-lower.navbar.navbar-default .navbar-nav > .open > a, 
+	.header-lower.navbar.navbar-default .navbar-nav > .open > a:focus, 
+	.header-lower.navbar.navbar-default .navbar-nav > .open > a:hover {color: #000;}
+	.header-lower.navbar .container {border: none;margin: 0;}
+
+	.tp-caption {display: none !important;}
+	.header-contact-info ul li {margin: 0;padding: 0 10px;}
+}
+
+@media (max-width: 480px) {
+	.main-header.stricky-fixed .header-top {margin-top: -100px; }
+}
+@media (max-width: 360px) {
+	.navbar-brand > img {width: 225px; }
+}
