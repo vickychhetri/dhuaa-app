@@ -100,6 +100,7 @@ Route::group(["middleware" => ["UserLogChecker"]], function () {
 ##################################################
 // Add Product Page
 Route::get('/Admin/Add-Product-Info', 'App\Http\Controllers\ProductController@index');
+Route::post('/Admin/Add-Product-Info', 'App\Http\Controllers\ProductController@store');
 
 
 });
