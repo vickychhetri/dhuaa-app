@@ -249,7 +249,7 @@
 </div>
 <hr />
 
-
+<x-Administrator.Product.Listproduct/>
 @endsection
 @section('footercontainebelow')
 <!-- PAGE LEVEL SCRIPTS -->
