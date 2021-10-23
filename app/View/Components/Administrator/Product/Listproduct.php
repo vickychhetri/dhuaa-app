@@ -16,8 +16,15 @@ class Listproduct extends Component
     public function __construct()
     {
         $this->listproductbase = DB::table('products')
-        ->select('products.*')
+        ->join('companies', 'products.companyId', '=', 'companies.id')
+        ->join('productcategories', 'products.categoryId', '=', 'productcategories.id')
+        ->join('typeproducts', 'products.productTypeId', '=', 'typeproducts.id')
+
+        ->select('products.*','companies.companyName','typeproducts.typeName','productcategories.category')
         ->get();
+
+        
+
     }
 
     /**

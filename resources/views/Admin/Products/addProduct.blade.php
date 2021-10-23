@@ -76,7 +76,7 @@
                         <label for="text4" class="control-label col-lg-4"> Product Type </label>
 
                         <div class="col-lg-8">
-                            <select id="text4" class="form-control" name="ProductTypeId">
+                            <select id="text4" class="form-control" name="ProductCategoryId">
                                 <option value=""> - </option>
                                 @foreach($categoryData as $catgory)
                                 <option value="{{$catgory->id}}"> {{$catgory->category}} </option>
@@ -93,7 +93,7 @@
                         <label for="text4" class="control-label col-lg-4"> Category of the product </label>
 
                         <div class="col-lg-8">
-                            <select id="text4" class="form-control" name="ProductCategoryId">
+                            <select id="text4" class="form-control" name="ProductTypeId" >
                                 <option value=""> - </option>
                                 @foreach($productTypeData as $productType)
                                 <option value="{{$productType->id}}"> {{$productType->typeName}} </option>

@@ -11,6 +11,20 @@ use Exception;
 
 class CompanyController extends Controller
 {
+    /***
+     * Company id to name revert method
+     */
+    public function getCompanyName($id){
+        $data= Company::where('id', '=', $id)->firstOrFail();
+        if($data){
+            return $data->companyName;
+        }
+        else {
+            return -1;
+        }
+    }
+
+
     /**
      * Display a listing of the resource.
      *

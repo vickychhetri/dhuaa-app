@@ -52,7 +52,11 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="single-footer-widget">
                             <div class="footer-logo">
-                                <img src="img/resources/footer-logo.png" alt="Awesome Footer Logo">
+                            <div class="sec-title text-left">
+                                <h2>24/7 Available</h2>
+                                <span class="decor"></span>
+                            </div>
+                                <!-- <img src="img/resources/footer-logo.png" alt="Awesome Footer Logo"> -->
                             </div>
                             <div class="text">
                                 <p> 
@@ -218,7 +222,7 @@
                 <div class="row">
                     <div class="col-md-9 col-sm-8 col-xs-12">
                         <div class="copy-right">
-                            <p>Copyrights © 2021 All Rights Reserved by <a href="https://vickychhetri.com">Vicky Chhetri</a></p>
+                            <p>Copyrights © 2021 All Rights Reserved by <a href="https://dhuaa.com">Dhuaa</a></p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
