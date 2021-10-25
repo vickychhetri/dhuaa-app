@@ -75,7 +75,7 @@
                                        specialty.
                                     
                                     </p>
-                                <a class="aut-cr-btn" href="">Contact Now</a>
+                                <a class="aut-cr-btn" href="/Contact-us">Contact Now</a>
                             </div>
                         </div>
                     </div>
@@ -88,8 +88,8 @@
                                 <span class="decor"></span>
                             </div>
                             <ul class="service-list">
-                                <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Roadside Services, Onsite Repair</a></li>
-                                <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Truck, Trailer & Tire Repair</a></li>
+                                <li><a href="/Roadside-Services-Onsite-Repair"><i class="fa fa-angle-right" aria-hidden="true"></i>Roadside Services, Onsite Repair</a></li>
+                                <li><a href="/Truck-Trailer-Tire-Repair "><i class="fa fa-angle-right" aria-hidden="true"></i>Truck, Trailer & Tire Repair</a></li>
                                 <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>New, Used & Recap Tyre Available</a></li>
                                 <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Brakes, Air/Fluids Leaks, Air bag and Suspension</a></li>
                                 <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i>Out of Fuel Delivery, Jump Start & Battery Replacements </a></li>

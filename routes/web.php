@@ -28,6 +28,9 @@ Route::get('/index', function () {
 Route::get('/about-us', function () {
     return view('aboutus');
 });
+Route::get('/Contact-us', function () {
+    return view('contactus');
+});
 Route::get('/404', function () {
     return view('404');
 });
@@ -39,6 +42,15 @@ Route::get('/Schedule-service', function () {
 Route::get('/Shop', function () {
     return view('shopItem');
 });
+
+Route::get('/Roadside-Services-Onsite-Repair', function () {
+    return view('Services.service1');
+});
+Route::get('/Truck-Trailer-Tire-Repair', function () {
+    return view('Services.service2');
+});
+
+
 
 ##################################################
 #    Admin section  to control adminLogin        # 

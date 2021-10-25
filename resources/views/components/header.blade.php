@@ -70,7 +70,7 @@
                             <a href="about-us.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="true">About <span class="decor"></span></a>
                             <ul class="dropdown-menu">
                             <li><a href="/404">Service Manager</a></li>
-                            <li><a href="/404">About Us</a></li>
+                            <li><a href="/about-us">About Us</a></li>
                              
                                 <!-- <li><a href="pricing.html">Pricing Table</a></li>
                                 <li><a href="testimonial.html">Testimonials</a></li>
@@ -81,9 +81,8 @@
                         <li class="dropdown">
                             <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="true">Services <span class="decor"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/404">Services Page</a></li>
-                                <li><a href="/404">Roadside Services,Mobile Repair & Onsite Repair</a></li>
-                                <li><a href="/404">Truck, Trailer & Tire Repair</a></li>
+                                <li><a href="/Roadside-Services-Onsite-Repair">Roadside Services,Mobile Repair & Onsite Repair</a></li>
+                                <li><a href="/Truck-Trailer-Tire-Repair">Truck, Trailer & Tire Repair</a></li>
                                 <li><a href="/404">New, Used & Recap Tyre Available</a></li>
                                 <li><a href="/404">Brakes, Air/Fluids Leaks, Air bag and Suspension</a></li>
                                 <li><a href="/404">Out of Fuel Delivery, Jump Start & Battery Replacements</a></li>
@@ -109,7 +108,7 @@
                             <a href="/404" >Reviews <span class="decor"></span></a>
                           
                         </li>
-                        <li><a href="/404">Contact <span class="decor"></span></a></li>
+                        <li><a href="/Contact-us">Contact <span class="decor"></span></a></li>
                     </ul>
                                         
                 </div><!-- /.navbar-collapse -->

@@ -6998,13 +6998,15 @@ input:-webkit-autofill:focus {
 }
 
 .services-single-content .working-topics-video-preview img {
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    opacity: 1;
     transition: all 0.3s ease 0s;
     width: 100%;
 }
 
 .services-single-content .working-topics-video-preview a:hover img {
-    opacity: .85;
+    opacity: 1;
+    /* opacity: .85; */
 }
 
 .services-single-content .working-topics-content {
