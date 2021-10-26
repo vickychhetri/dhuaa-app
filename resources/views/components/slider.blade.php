@@ -24,7 +24,7 @@
                             </div>
                             <h1>New & Used Tires</h1>
                             <span class="border"></span>
-                            <p>We carry tires from all the top names, including Michelin Truck Tires, Goodyear Tires, <br/> Yokohama Tires, Camso, Dunlop Tires, BFGoodrich Tires, Cooper tires, Kelly Tires, and Uniroyal.</p>
+                            <p class="whitePTag">We carry tires from all the top names, including Michelin Truck Tires, Goodyear Tires, <br/> Yokohama Tires, Camso, Dunlop Tires, BFGoodrich Tires, Cooper tires, Kelly Tires, and Uniroyal.</p>
                             <a href="#" class="aut-cr-btn2">Shop Now</a>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             </div>
                             <h1>Truck Accessories & Parts</h1>
                             <span class="border"></span>
-                            <p>Add performance and suspension components, as well as various custom truck accessories or parts, and <br/> create the ultimate hauler on or off the road!.</p>
+                            <p class="whitePTag">Add performance and suspension components, as well as various custom truck accessories or parts, and <br/> create the ultimate hauler on or off the road!.</p>
                           <center>  <a href="#" class="aut-cr-btn2" >Shop Now</a> </center>
                         </div>
                     </div>
