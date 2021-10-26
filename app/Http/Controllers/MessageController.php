@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Message;
 use Illuminate\Http\Request;
+use Illuminate\Database\QueryException;
+use App\Http\Controllers\Agentsessionhandler;
+use Exception;
 
 class MessageController extends Controller
 {
@@ -14,7 +17,7 @@ class MessageController extends Controller
      */
     public function index()
     {
-        //
+        return view('contactus');
     }
 
     /**
@@ -35,7 +38,35 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+
+        $request->validate([
+            'name' => 'required|max:150',
+            'email' => 'required|max:150',
+            'subject' => 'required|max:200',
+            'phone' => 'required|max:150',
+            'message' => 'required|max:250'
+        ]);
+        try {
+            $database_agent = new Message;
+            $database_agent->name = $request->name;
+            $database_agent->email = $request->email;
+            $database_agent->subject = $request->subject;
+            $database_agent->phone = $request->phone;
+            $database_agent->message = $request->message;
+            $database_agent->ipAddress = $request->ip();
+            $res = $database_agent->save();
+            if ($res == "1") {
+                return redirect()->back()->with('message', 'Message sent Successfully !');
+            }
+        } catch (QueryException $e) {
+            // print($e); 
+            echo "Query Exception !.";
+        } catch (Exception $e) {
+            echo "Exception!.";
+        }
+        return redirect()->back()->with('Error', 'Task Fail :: Sorry, message not sent ! ');
+   
     }
 
     /**

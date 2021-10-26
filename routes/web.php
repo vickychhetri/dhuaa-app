@@ -28,9 +28,14 @@ Route::get('/index', function () {
 Route::get('/about-us', function () {
     return view('aboutus');
 });
-Route::get('/Contact-us', function () {
-    return view('contactus');
-});
+ 
+#Contact us page access 
+Route::get('/Contact-us', 'App\Http\Controllers\MessageController@index');
+Route::post('/Contact-us', 'App\Http\Controllers\MessageController@store');
+
+
+
+
 Route::get('/404', function () {
     return view('404');
 });

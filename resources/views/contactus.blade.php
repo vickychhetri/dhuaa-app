@@ -7,7 +7,7 @@
 @section('headercontainer')
 @endsection
 @section('container')
-   <!--Start breadcrumb area-->
+<!--Start breadcrumb area-->
 <section class="breadcrumb-area">
     <div class="container">
         <div class="row">
@@ -21,7 +21,7 @@
     </div>
 </section>
 <!--End breadcrumb area-->
-<!--Start breadcrumb bottom area--> 
+<!--Start breadcrumb bottom area-->
 <section class="breadcrumb-bottom-area">
     <div class="container">
         <div class="row">
@@ -29,7 +29,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><i class="fa fa-angle-right"></i></li>
-                    <li>Contact us</li> 
+                    <li>Contact us</li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-7 col-sm-7">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-</section>    
+</section>
 <!--End breadcrumb bottom area-->
 
 
@@ -52,11 +52,11 @@
                         <span class="decor"></span>
                     </div>
                     <p>
-                    {{env('APPLICATION_NAME')}} is {{env('APPLICATION_LOCATION')}} City’s premier service & repair facility for 
-                    truck owners who desire the fastest turnaround time, the best rates 
-                    and one-on-one personal service. Getting you 
-                    back on the road fast, affordable and with the job done right is our specialty.
-                    
+                        {{env('APPLICATION_NAME')}} is {{env('APPLICATION_LOCATION')}} City’s premier service & repair facility for
+                        truck owners who desire the fastest turnaround time, the best rates
+                        and one-on-one personal service. Getting you
+                        back on the road fast, affordable and with the job done right is our specialty.
+
                     </p>
                     <ul class="contact-info">
                         <li class="address">
@@ -95,7 +95,8 @@
                         <h1>Send Message Us</h1>
                         <span class="decor"></span>
                     </div>
-                    <form action="#">
+                    <form action="/Contact-us" method="post">
+                        {{csrf_field()}}
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" name="name" placeholder="Your Name*">
@@ -115,6 +116,19 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <textarea name="message" placeholder="Message*"></textarea>
+
+                                <!-- Login failed  message-->
+                                @if (session('message'))
+                                <div class="alert alert-success">
+                                    {{ session('message') }}
+                                </div>
+                                @endif
+                                <!-- Login failed  message-->
+                                @if (session('Error'))
+                                <div class="alert alert-danger">
+                                    {{ session('Error') }}
+                                </div>
+                                @endif
                             </div>
                         </div>
                         <div class="row">
@@ -123,15 +137,15 @@
                             </div>
                         </div>
                     </form>
-                </div>    
+                </div>
             </div>
         </div>
     </div>
-</section>      
+</section>
 <!--End contact area-->
-    
 
 
-  
+
+
 
 @endsection
