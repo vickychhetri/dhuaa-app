@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     <br/>
-                  <center>  <a href="#" class="aut-cr-btn2">Contact Now</a> </center>
+                    <x-Small.Parts.Contactbutton />
                 </div>
             </div>
 

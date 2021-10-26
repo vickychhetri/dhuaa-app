@@ -55,6 +55,13 @@ Route::get('/Truck-Trailer-Tire-Repair', function () {
     return view('Services.service2');
 });
 
+Route::get('/New-Used-Recap-Tyre-Available', function () {
+    return view('Services.service3');
+});
+
+
+
+
 
 
 ##################################################
