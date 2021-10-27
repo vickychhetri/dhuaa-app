@@ -59,6 +59,12 @@ Route::get('/New-Used-Recap-Tyre-Available', function () {
     return view('Services.service3');
 });
 
+Route::get('/tmp', function () {
+    return view('Template.template1');
+});
+
+// Page Template 
+Route::get('/Services/{id}','App\Http\Controllers\UserpageController@showpage');
 
 
 
@@ -126,5 +132,13 @@ Route::group(["middleware" => ["UserLogChecker"]], function () {
 Route::get('/Admin/Add-Product-Info', 'App\Http\Controllers\ProductController@index');
 Route::post('/Admin/Add-Product-Info', 'App\Http\Controllers\ProductController@store');
 
+##############################################################
+#   Create New Dynamic Pages Routes : VICKY CHHETRI          # 
+##############################################################
+// Add Product Page
+Route::get('/Admin/Add-New-Pages', 'App\Http\Controllers\UserpageController@index');
+Route::post('/Admin/Add-New-Pages', 'App\Http\Controllers\UserpageController@store');
+
+Route::post('/upload', 'App\Http\Controllers\UserpageController@upload');
 
 });

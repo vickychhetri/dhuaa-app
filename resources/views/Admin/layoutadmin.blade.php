@@ -193,6 +193,23 @@
                         <li class=""><a href="/Admin/List-Product-Info"><i class="icon-angle-right"></i> List InActive Product </a></li>
                     </ul>
                 </li>
+                <li class="panel ">
+                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" 
+                    data-target="#component-nav-5">
+                        <i class=" icon-folder-open-alt"></i>   Pages
+
+                        <span class="pull-right">
+                            <i class="icon-angle-left"></i>
+                        </span>
+
+                    </a>
+                    <ul class="collapse" id="component-nav-5">
+                        
+                        <li class=""><a href="/Admin/Add-New-Pages"><i class="icon-angle-right"></i> Add New Page </a></li>
+                        <li class=""><a href="#"><i class="icon-angle-right"></i> Edit Page </a></li>
+                         
+                    </ul>
+                </li>
                 <li><a href="#"> <i class=" icon-folder-open-alt"></i>Schedule Service </a></li>
                 <li><a href="#"> <i class=" icon-folder-open-alt"></i>Contact List </a></li>
                 <li><a href="#"> <i class=" icon-folder-open-alt"></i>Subscribe List </a></li>

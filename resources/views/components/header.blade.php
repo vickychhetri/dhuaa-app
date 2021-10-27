@@ -54,7 +54,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/resources/logo.png" alt="Awesome LOgo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="/img/resources/logo.png" alt="Awesome LOgo"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
