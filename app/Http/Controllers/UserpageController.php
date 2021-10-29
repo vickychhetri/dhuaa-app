@@ -57,7 +57,8 @@ class UserpageController extends Controller
             $postCat=$request->pagetypestoCreate;
         }
         $reDbms= new Userpage;
-        $pagenamenewafter="Dhuaa-".time()."-".$pagename1;
+        // $pagenamenewafter="Dhuaa-".time()."-".$pagename1;
+         $pagenamenewafter=$pagename1;
         $reDbms->pageName=$pagenamenewafter;
         $reDbms->title=$request->title;
         $reDbms->visible=1;
@@ -125,7 +126,7 @@ class UserpageController extends Controller
      */
     public function edit(Userpage $userpage)
     {
-        //
+        return view('Admin.Pages.editPages');
     }
 
     /**

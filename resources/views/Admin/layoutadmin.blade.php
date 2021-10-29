@@ -206,7 +206,7 @@
                     <ul class="collapse" id="component-nav-5">
                         
                         <li class=""><a href="/Admin/Add-New-Pages"><i class="icon-angle-right"></i> Add New Page </a></li>
-                        <li class=""><a href="#"><i class="icon-angle-right"></i> Edit Page </a></li>
+                        <li class=""><a href="/Admin/List-Pages"><i class="icon-angle-right"></i> List Page </a></li>
                          
                     </ul>
                 </li>

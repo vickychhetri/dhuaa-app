@@ -64,7 +64,7 @@ Route::get('/tmp', function () {
 });
 
 // Page Template 
-Route::get('/Services/{id}','App\Http\Controllers\UserpageController@showpage');
+Route::get('/View/{id}','App\Http\Controllers\UserpageController@showpage');
 
 
 
@@ -138,7 +138,12 @@ Route::post('/Admin/Add-Product-Info', 'App\Http\Controllers\ProductController@s
 // Add Product Page
 Route::get('/Admin/Add-New-Pages', 'App\Http\Controllers\UserpageController@index');
 Route::post('/Admin/Add-New-Pages', 'App\Http\Controllers\UserpageController@store');
-
 Route::post('/upload', 'App\Http\Controllers\UserpageController@upload');
+
+//Edit Page Routes
+
+Route::get('/Admin/List-Pages', 'App\Http\Controllers\UserpageController@edit');
+
+
 
 });
