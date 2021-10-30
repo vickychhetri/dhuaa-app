@@ -125,7 +125,7 @@
                     </a>
                 </li>
 
-
+<!-- 
 
                 <li class="panel ">
                     <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#component-nav">
@@ -172,7 +172,7 @@
                         <li class=""><a href="#'"><i class="icon-angle-right"></i> Delete Image </a></li>
                         <li class=""><a href="#'"><i class="icon-angle-right"></i> Delete Album </a></li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="panel ">
                     <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" 
                     data-target="#component-nav-4">
@@ -222,9 +222,9 @@
 
 
         <!--PAGE CONTENT -->
-        <div id="content">
+        <div id="content" style="height:100%;">
 
-            <div class="inner" style="min-height:1200px;">
+            <div class="inner" >
                 <div class="row">
                     <div class="col-lg-12">
 

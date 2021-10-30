@@ -6,6 +6,7 @@ use App\Models\Userpage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Agentsessionhandler;
+use Illuminate\Support\Facades\DB;
 
 class UserpageController extends Controller
 {
@@ -118,15 +119,30 @@ class UserpageController extends Controller
         //
     }
 
+
+    
+    public function showlist(Userpage $userpage)
+    {
+        return view('Admin.Pages.editPages');
+    }
+
+
     /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Userpage  $userpage
      * @return \Illuminate\Http\Response
      */
-    public function edit(Userpage $userpage)
+    public function edit(Userpage $userpage,$id)
     {
-        return view('Admin.Pages.editPages');
+        $data = DB::table('userpages')
+        ->join('typepages', 'userpages.typePage', '=', 'typepages.id')
+        ->select('userpages.*','typepages.page_category','typepages.page_category_description')
+        ->where('userpages.id', '=', $id)
+        ->get()
+        ->first();
+        return view('Admin.Pages.editPageNow')
+        ->with('pageInfo',$data);
     }
 
     /**
@@ -138,7 +154,55 @@ class UserpageController extends Controller
      */
     public function update(Request $request, Userpage $userpage)
     {
-        //
+        $request->validate([
+            'title'=>'required',
+            'thumbnailimage'=>'mimes:png,jpg,jpeg,PNG,JPG,JPEG|max:2048',
+            'pagetypestoCreate'=>'required',
+            'tags'=>'required',
+            'shortdescription'=>'required',
+            'mytextarea'=>'required',
+        ]);
+
+        $reDbms=Userpage::find($request->id);
+        $reDbms->title=$request->title;
+        $reDbms->visible=1;
+        $reDbms->keywords=$request->tags;
+        $reDbms->typePage=$request->pagetypestoCreate;
+        $reDbms->description=$request->shortdescription;
+
+        $filenamelong=$reDbms->content;        
+        $reDbms->content=$filenamelong;
+
+        $pagenamenewafter=$reDbms->pageName;
+        if($request->ChangeImage=="yes"){
+        //delete old one
+        $fileb=public_path('ArticleImages/').$reDbms->thumbnail;
+        unlink($fileb);
+        //save new one
+        $newImageName= $pagenamenewafter.'-'.time().'.'.$request->thumbnailimage->extension();
+        $reDbms->thumbnail =$newImageName;
+        }
+        //Sesion id :get | Hold Parent or session Information
+        $agent = new Agentsessionhandler;
+        $reDbms->parentId = $agent->getSessionId();
+
+        $res=$reDbms->save();
+
+        if($res=="1"){
+
+      Storage::disk('local')->put("/longDescArticle/".$filenamelong, $request->mytextarea);
+      
+      if($request->ChangeImage=="yes"){ 
+      $request->thumbnailimage->move(public_path('ArticleImages'),$newImageName);
+      }
+
+      return redirect()->back()->with('message','Completed !');     
+
+    }    
+          else {
+             return redirect()->back()->with('Error','Sorry Somehing bad Happen !');
+          }
+
     }
 
     /**
@@ -147,8 +211,15 @@ class UserpageController extends Controller
      * @param  \App\Models\Userpage  $userpage
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Userpage $userpage)
+    public function destroy(Userpage $userpage,$id)
     {
-        //
+        $reDbms= Userpage::find($id);
+        $fileb=public_path('ArticleImages/').$reDbms->thumbnail;
+          unlink($fileb);
+          if (Storage::exists("/longDescArticle/".$reDbms->content)) {
+            Storage::delete("/longDescArticle/".$reDbms->content);
+        }
+        $reDbms->delete();
+        return redirect()->back()->with('message','Completed !');   
     }
 }

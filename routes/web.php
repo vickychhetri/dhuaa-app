@@ -142,8 +142,11 @@ Route::post('/upload', 'App\Http\Controllers\UserpageController@upload');
 
 //Edit Page Routes
 
-Route::get('/Admin/List-Pages', 'App\Http\Controllers\UserpageController@edit');
+Route::get('/Admin/List-Pages', 'App\Http\Controllers\UserpageController@showlist');
 
-
+//Edit Page 
+Route::get('/Pages/EditPage/{id}', 'App\Http\Controllers\UserpageController@edit');
+Route::post('/Pages/EditPage/', 'App\Http\Controllers\UserpageController@update');
+Route::get('/Pages/DeletePage/{id}', 'App\Http\Controllers\UserpageController@destroy');
 
 });

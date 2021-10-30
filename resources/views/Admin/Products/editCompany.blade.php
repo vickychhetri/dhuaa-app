@@ -64,8 +64,8 @@
 
                         <div class="col-lg-8">
                             <select data-placeholder="Choose a Country" name="TypeCompany" class="form-control chzn-select" tabindex="2">
-                                <option value="Finanace" {{$cdata->typeCompany == 'Finanace' ? 'selected' : '' }}>Finanace</option>
-                                <option value="Transport" {{($cdata->typeCompany == "Transport") ? 'selected' : '' }}>Transport</option>
+                                <option value="Finanace" {{$pageInfo->typeCompany == 'Finanace' ? 'selected' : '' }}>Finanace</option>
+                                <option value="Transport" {{($pageInfo->typeCompany == "Transport") ? 'selected' : '' }}>Transport</option>
                             </select>
 
                         </div>

@@ -105,7 +105,7 @@
                             
                         </li>
                         <li class="dropdown">
-                            <a href="/404" >Reviews <span class="decor"></span></a>
+                            <a href="/404" >Blog <span class="decor"></span></a>
                           
                         </li>
                         <li><a href="/Contact-us">Contact <span class="decor"></span></a></li>
