@@ -117,7 +117,7 @@
                                 <td>
                                     <p> Image </p>
                                     <img src="/ArticleImages/{{$pageInfo->thumbnail}}"
-                                        style="height:200px;max-width:100%:;max-height:100%;" />
+                                        style="height:200px;max-width:100%;max-height:100%;" />
                                     <input type="checkbox" name="ChangeImage" value="yes" class="checkbox"
                                         style="  width: 30px;height: 30px;" /> Click here if (Tick) if you want toi
                                     change image. this will delete older image and replace with new.
