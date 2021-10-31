@@ -42,7 +42,7 @@
                 </div>
             </header>
             <div id="div-1" class="accordion-body collapse in body">
-                <form method="post" action="/Pages/EditPage/" enctype="multipart/form-data">
+                <form method="post" action="/Pages/EditPage" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <?php 
                     try{
@@ -69,10 +69,9 @@
                                     <p> Page Types </p>
 
                                     <select name="pagetypestoCreate" class="form-control">
-                                        <option value="1" {{$pageInfo->typePage == '1' ? 'selected' : '' }}> Blog
-                                        </option>
-                                        <option value="2" {{$pageInfo->typePage == '2' ? 'selected' : '' }}> Services
-                                        </option>
+                                        @foreach($TypePageName as $pageName)
+                                        <option value="{{$pageName->id}}" {{$pageInfo->typePage == $pageName->id ? 'selected' : '' }}> {{$pageName->page_category}} </option>
+                                        @endforeach
                                     </select>
 
                                     <span style="color:red;">

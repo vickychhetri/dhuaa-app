@@ -46,7 +46,7 @@ class TypepageController extends Controller
      */
     public function show(Typepage $typepage)
     {
-        //
+        // return Typepage::all();
     }
 
     /**

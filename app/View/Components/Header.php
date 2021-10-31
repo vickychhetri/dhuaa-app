@@ -3,9 +3,14 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\DB;
+
 
 class Header extends Component
 {
+    public $services;
+    public $blogs;
+    
     /**
      * Create a new component instance.
      *
@@ -13,7 +18,17 @@ class Header extends Component
      */
     public function __construct()
     {
-        //
+        $this->blogs = DB::table('userpages')
+        ->select('userpages.*')
+        ->where('typePage','1')
+        ->limit(6)
+        ->get();
+        
+        $this->services = DB::table('userpages')
+        ->select('userpages.*')
+        ->where('typePage','2')
+        ->limit(6)
+        ->get();
     }
 
     /**

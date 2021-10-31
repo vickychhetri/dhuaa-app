@@ -58,8 +58,10 @@
                                     <p> Page Types </p>
                                     <select name="pagetypestoCreate" class="form-control">
                                         <option value="">-</option>
-                                        <option value="1"> Blog </option>
-                                        <option value="1"> Services </option>
+                                        @foreach($TypePageName as $pageName)
+                                        <option value="{{$pageName->id}}"> {{$pageName->page_category}} </option>
+                                        @endforeach
+
                                     </select>
 
                                     <span style="color:red;">

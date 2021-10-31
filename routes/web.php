@@ -65,6 +65,12 @@ Route::get('/tmp', function () {
 
 // Page Template 
 Route::get('/View/{id}','App\Http\Controllers\UserpageController@showpage');
+// Page Template 
+Route::get('/Service/{id}','App\Http\Controllers\UserpageController@showpage');
+
+// Page Template 
+Route::get('/Blog/{id}','App\Http\Controllers\UserpageController@showpage');
+
 
 
 

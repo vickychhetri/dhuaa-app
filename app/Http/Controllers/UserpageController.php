@@ -1,12 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Typepage;
 use App\Models\Userpage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Agentsessionhandler;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\TypepageController;
 
 class UserpageController extends Controller
 {
@@ -17,8 +18,12 @@ class UserpageController extends Controller
      */
     public function index()
     {
-        return view('Admin.Pages.Addpage');
+        $typePagesName=Typepage::all();
+        return view('Admin.Pages.Addpage')
+        ->with('TypePageName',$typePagesName);
     }
+
+
 
     public function showpage($id){
         $data=Userpage::where('pageName','=',$id)->firstOrFail();
@@ -134,7 +139,8 @@ class UserpageController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(Userpage $userpage,$id)
-    {
+    { $typePagesName=Typepage::all();
+         
         $data = DB::table('userpages')
         ->join('typepages', 'userpages.typePage', '=', 'typepages.id')
         ->select('userpages.*','typepages.page_category','typepages.page_category_description')
@@ -142,7 +148,8 @@ class UserpageController extends Controller
         ->get()
         ->first();
         return view('Admin.Pages.editPageNow')
-        ->with('pageInfo',$data);
+        ->with('pageInfo',$data)
+        ->with('TypePageName',$typePagesName);
     }
 
     /**
