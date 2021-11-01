@@ -99,7 +99,14 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="/404">Resources <span class="decor"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="false" aria-expanded="true">Resources <span class="decor"></span></a>
+                        <ul class="dropdown-menu">
+                            @foreach($resources as $resource)
+                            <li><a href="/Resource/{{$resource->pageName}}"> {{$resource->title}}</a></li>
+                            @endforeach
+                            <li><a href="/Resources"> Show More.</a></li>
+                        </ul>
 
                     </li>
                   
@@ -107,7 +114,6 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-haspopup="false" aria-expanded="true">Blog <span class="decor"></span></a>
                         <ul class="dropdown-menu">
-    
                             @foreach($blogs as $blog)
                             <li><a href="/Blog/{{$blog->pageName}}"> {{$blog->title}}</a></li>
                             @endforeach

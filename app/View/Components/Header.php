@@ -10,6 +10,7 @@ class Header extends Component
 {
     public $services;
     public $blogs;
+    public $resources;
     
     /**
      * Create a new component instance.
@@ -27,6 +28,12 @@ class Header extends Component
         $this->services = DB::table('userpages')
         ->select('userpages.*')
         ->where('typePage','2')
+        ->limit(6)
+        ->get();
+
+        $this->resources = DB::table('userpages')
+        ->select('userpages.*')
+        ->where('typePage','3')
         ->limit(6)
         ->get();
     }
