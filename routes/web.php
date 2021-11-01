@@ -63,6 +63,8 @@ Route::get('/tmp', function () {
     return view('Template.template1');
 });
 
+
+
 // Page Template 
 Route::get('/View/{id}','App\Http\Controllers\UserpageController@showpage');
 // Page Template 
@@ -71,7 +73,11 @@ Route::get('/Service/{id}','App\Http\Controllers\UserpageController@showpage');
 // Page Template 
 Route::get('/Blog/{id}','App\Http\Controllers\UserpageController@showpage');
 
+//List Blogs
+Route::get('/Blogs','App\Http\Controllers\Handleblog@showbloglist');
 
+//List Blogs
+Route::get('/Services','App\Http\Controllers\Handleblog@showservicelist');
 
 
 

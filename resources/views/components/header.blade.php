@@ -81,7 +81,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-haspopup="false" aria-expanded="true">Services <span class="decor"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="/Roadside-Services-Onsite-Repair">Roadside Services,Mobile Repair & Onsite
@@ -111,7 +111,7 @@
                             @foreach($blogs as $blog)
                             <li><a href="/Blog/{{$blog->pageName}}"> {{$blog->title}}</a></li>
                             @endforeach
-                             
+                            <li><a href="/Blogs"> Show More.</a></li>
                         </ul>
                     </li>
 

@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Agentsessionhandler;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\TypepageController;
 
 class UserpageController extends Controller
 {
