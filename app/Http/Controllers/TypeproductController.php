@@ -104,7 +104,7 @@ class TypeproductController extends Controller
             'Description' => 'required|max:255',
         ]);
         try {
-            $database_agent = Typeproduct::find($request->id);;
+            $database_agent = Typeproduct::find($request->id);
             $database_agent->typeName = $request->TypeProduct;
             $database_agent->description = $request->Description;
 

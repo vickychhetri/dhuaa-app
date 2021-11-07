@@ -275,7 +275,7 @@
 <div class="row">
     <div class="col-md-3"> 
         <a href="/Admin/Product/Addtional-Information/{{$productInfo->id}}" class="btn btn-primary">
-        Additional Specification
+        Additional Information
      </a>
     </div>
     <div class="col-md-3">
@@ -285,12 +285,12 @@
     </div>
     <div class="col-md-3">
         <a href="/Admin/Product/FeaturesBenifits/{{$productInfo->id}}" class="btn btn-primary">
-        Additional FeaturesBenifits
+        Product FeaturesBenifits
      </a>
     </div>
     <div class="col-md-3">
         <a href="/Admin/Product/Product-Reviews/{{$productInfo->id}}" class="btn btn-primary">
-        Additional Specification
+        Product Reviews
      </a>
     </div>
 </div>
