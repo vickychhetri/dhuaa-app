@@ -73,18 +73,13 @@
                         <ul class="dropdown-menu">
                             <li><a href="/404">Service Manager</a></li>
                             <li><a href="/about-us">About Us</a></li>
-
-                            <!-- <li><a href="pricing.html">Pricing Table</a></li>
-                                <li><a href="testimonial.html">Testimonials</a></li>
-                                <li><a href="faq.html">FAQ’s</a></li>
-                                <li><a href="404.html">404 Page</a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-haspopup="false" aria-expanded="true">Services <span class="decor"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/Roadside-Services-Onsite-Repair">Roadside Services,Mobile Repair & Onsite
+                             <li><a href="/Roadside-Services-Onsite-Repair">Roadside Services,Mobile Repair & Onsite
                                     Repair</a></li>
                             <li><a href="/Truck-Trailer-Tire-Repair">Truck, Trailer & Tire Repair</a></li>
                             <li><a href="/New-Used-Recap-Tyre-Available">New, Used & Recap Tyre Available</a></li>
@@ -105,7 +100,7 @@
                             @foreach($resources as $resource)
                             <li><a href="/Resource/{{$resource->pageName}}"> {{$resource->title}}</a></li>
                             @endforeach
-                            <li><a href="/Resources"> Show More.</a></li>
+                            <li><a href="/Resources"> Show More </a></li>
                         </ul>
 
                     </li>
@@ -117,7 +112,7 @@
                             @foreach($blogs as $blog)
                             <li><a href="/Blog/{{$blog->pageName}}"> {{$blog->title}}</a></li>
                             @endforeach
-                            <li><a href="/Blogs"> Show More.</a></li>
+                            <li><a href="/Blogs"> Show More </a></li>
                         </ul>
                     </li>
 

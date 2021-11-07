@@ -144,6 +144,19 @@ Route::group(["middleware" => ["UserLogChecker"]], function () {
 Route::get('/Admin/Add-Product-Info', 'App\Http\Controllers\ProductController@index');
 Route::post('/Admin/Add-Product-Info', 'App\Http\Controllers\ProductController@store');
 
+
+Route::get('/Admin/Edit-Product-Info/{id}', 'App\Http\Controllers\ProductController@Edit');
+Route::post('/Admin/Edit-Product-Info', 'App\Http\Controllers\ProductController@update');
+
+//pending : ok
+Route::get('/Admin/Delete-Product/{id}', 'App\Http\Controllers\ProductController@destroy');
+ //Specification of the products
+Route::get('/Admin/Product/Addtional-Specification/{id}', 'App\Http\Controllers\AddtionalspecificationController@index');
+Route::post('/Admin/Product/AAddtional-Specification', 'App\Http\Controllers\AddtionalspecificationController@store');
+Route::post('/Admin/Product/EAddtional-Specification', 'App\Http\Controllers\AddtionalspecificationController@update');
+//delete the specification of the product
+Route::get('/Admin/Product/Delete-Addtional-Specification/{id}', 'App\Http\Controllers\AddtionalspecificationController@destroy');
+
 ##############################################################
 #   Create New Dynamic Pages Routes : VICKY CHHETRI          # 
 ##############################################################
