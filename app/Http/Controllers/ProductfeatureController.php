@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Productfeature;
 use Illuminate\Http\Request;
+use Exception;
+use Illuminate\Database\QueryException;
+use App\Http\Controllers\Agentsessionhandler;
 
 class ProductfeatureController extends Controller
 {
@@ -12,11 +15,41 @@ class ProductfeatureController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        //
+        try{
+            //goal if already present update else insert
+   
+            if($id){
+            $updateRequired= ProductfeatureController::UpdateOrInsert($id);
+            if($updateRequired){
+                $data=Productfeature::where('productId', '=', $id)->firstOrFail();
+                return view('Admin.Products.addFeature')
+                ->with('features',$data);
+            }else {
+                return view('Admin.Products.addFeature')
+                ->with('productId',$id);
+            }
+            
+        }else{
+            return redirect('/noaccess');
+        }
+    }
+    catch(Exception $e){
+        echo "Sorry, Not Allowed.".$e;
     }
 
+    }
+
+    public static function UpdateOrInsert($id)
+    {
+        if(Productfeature::where('productId',$id)->get()->first()){
+            return true;
+        }
+        else {
+            return false;
+            }
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -35,7 +68,34 @@ class ProductfeatureController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'productId' => 'required',
+            'Benifits' => 'required',
+            'Features' => 'required',
+        ]);
+        try {
+            $database_agent = new Productfeature;
+            $database_agent->productId = $request->productId;
+            $database_agent->benefits = $request->Benifits;
+            $database_agent->features = $request->Features;
+
+            //Sesion id :get
+            $agent = new Agentsessionhandler;
+            $database_agent->parentId = $agent->getSessionId();
+            
+            $res = $database_agent->save();
+
+            if ($res == "1") {
+                return redirect()->back()->with('message', 'Record added Successfully !');
+            }
+        } catch (QueryException $e) {
+            // print($e); 
+            echo "Query Exception !.";
+        } catch (Exception $e) {
+            echo "Exception !.";
+        }
+        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+ 
     }
 
     /**

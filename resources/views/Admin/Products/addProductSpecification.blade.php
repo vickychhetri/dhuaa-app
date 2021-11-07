@@ -48,7 +48,7 @@
                         <div class="col-lg-8">
                             <input type="hidden" id="text1" class="form-control" 
                             name="productIdentification"
-                                value="{{$spcifications->productId}}" />
+                                value="{{$productId}}" />
                             <input type="text" id="text1" placeholder="Diameter"
                              class="form-control" name="diameter" value="{{$spcifications->diameter}}" />
                             <span style="color:red;">

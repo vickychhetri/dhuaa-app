@@ -273,36 +273,25 @@
 </div>
 <hr />
 <div class="row">
-    <div class="col-md-3">
-        <form action="/Admin/Product/Addtional-Information" method="post">
-              {{csrf_field()}}
-            <input type="hidden" name="id" value="{{$productInfo->id}}"/>
-            <input type="submit" value="Addtional Information" class="btn btn-primary" />
-        </form>
+    <div class="col-md-3"> 
+        <a href="/Admin/Product/Addtional-Information/{{$productInfo->id}}" class="btn btn-primary">
+        Additional Specification
+     </a>
     </div>
-    <div class="col-md-3" >
-        <!-- <form action="" method="post">
-                {{csrf_field()}}
-            <input type="hidden" name="id"  value="" />
-            <input type="submit" value="Additional Specification" class="btn btn-primary" />
-        </form> -->
+    <div class="col-md-3">
         <a href="/Admin/Product/Addtional-Specification/{{$productInfo->id}}" class="btn btn-primary">
         Additional Specification
      </a>
     </div>
     <div class="col-md-3">
-        <form action="/Admin/Product/FeaturesBenifits" method="post">
-                {{csrf_field()}}
-            <input type="hidden" name="id"  value="{{$productInfo->id}}" />
-            <input type="submit" value="Features & Benifits" class="btn btn-primary" />
-        </form>
+        <a href="/Admin/Product/FeaturesBenifits/{{$productInfo->id}}" class="btn btn-primary">
+        Additional FeaturesBenifits
+     </a>
     </div>
     <div class="col-md-3">
-        <form action="/Admin/Product/Product-Reviews" method="post"> 
-                {{csrf_field()}}    
-        <input type="hidden" name="id"  value="{{$productInfo->id}}"/>
-            <input type="submit" value="Product Reviews" class="btn btn-primary" />
-        </form>
+        <a href="/Admin/Product/Product-Reviews/{{$productInfo->id}}" class="btn btn-primary">
+        Additional Specification
+     </a>
     </div>
 </div>
 

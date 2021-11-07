@@ -157,6 +157,11 @@ Route::post('/Admin/Product/EAddtional-Specification', 'App\Http\Controllers\Add
 //delete the specification of the product
 Route::get('/Admin/Product/Delete-Addtional-Specification/{id}', 'App\Http\Controllers\AddtionalspecificationController@destroy');
 
+//Fetures and benifit of the product
+Route::get('/Admin/Product/FeaturesBenifits/{id}', 'App\Http\Controllers\ProductfeatureController@index');
+Route::post('/Admin/Product/FeaturesBenifits', 'App\Http\Controllers\ProductfeatureController@store');
+
+
 ##############################################################
 #   Create New Dynamic Pages Routes : VICKY CHHETRI          # 
 ##############################################################
