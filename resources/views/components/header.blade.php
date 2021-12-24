@@ -8,7 +8,7 @@
                         <div class="header-contact-info">
                             <ul>
                                 <li><i class="flaticon-telephone"></i>Customer Support: +123-456-7890</li>
-                                <li><i class="flaticon-interface-1"></i>Support@gmail.com</li>
+                                <li><i class="flaticon-interface-1"></i>Support@dhuaa.com</li>
                             </ul>
                         </div>
                     </div>
