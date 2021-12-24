@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Productbrand;
 use Illuminate\Http\Request;
+use Illuminate\Database\QueryException;
+use App\Http\Controllers\Agentsessionhandler;
+use Exception;
+use App\Models\Productyear;
 
 class ProductbrandController extends Controller
 {
@@ -14,7 +18,9 @@ class ProductbrandController extends Controller
      */
     public function index()
     {
-        //
+        $years=Productyear::all();
+        return view('Admin.Products.Catalog.addBrand')
+        ->with('YEARS',$years);
     }
 
     /**
@@ -35,7 +41,29 @@ class ProductbrandController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'Year' => 'required|numeric',
+            'brandName'=>'required|max:250'
+        ]);
+        try {
+            $database_agent = new Productbrand;
+            $database_agent->yearId = $request->Year;
+            $database_agent->brand = $request->brandName;
+            //Sesion id :get
+            $agent = new Agentsessionhandler;
+            $database_agent->parentId = $agent->getSessionId();
+            $res = $database_agent->save();
+            if ($res == "1") {
+                return redirect()->back()->with('message', 'Record added Successfully !');
+            }
+        } catch (QueryException $e) {
+            // print($e); 
+            echo "Query Exception !.";
+        } catch (Exception $e) {
+            echo "Exception !.";
+        }
+        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+       
     }
 
     /**
@@ -55,9 +83,11 @@ class ProductbrandController extends Controller
      * @param  \App\Models\Productbrand  $productbrand
      * @return \Illuminate\Http\Response
      */
-    public function edit(Productbrand $productbrand)
+    public function edit(Productbrand $productbrand,$id)
     {
-        //
+        $data=Productbrand::where('id',$id)->firstorfail();
+        return view("Admin.Products.Catalog.editBrand")
+            ->with('Brand', $data);
     }
 
     /**

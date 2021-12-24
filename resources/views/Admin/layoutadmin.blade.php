@@ -81,7 +81,7 @@
                             <li><a href="#"><i class="icon-gear"></i> Settings </a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="login.html"><i class="icon-signout"></i> Logout </a>
+                            <li><a href="/noaccess"><i class="icon-signout"></i> Logout </a>
                             </li>
                         </ul>
 
@@ -208,6 +208,26 @@
                         <li class=""><a href="/Admin/Add-New-Pages"><i class="icon-angle-right"></i> Add New Page </a></li>
                         <li class=""><a href="/Admin/List-Pages"><i class="icon-angle-right"></i> List Page </a></li>
                          
+                    </ul>
+                </li>
+                <li class="panel ">
+                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" 
+                    data-target="#component-nav-6">
+                        <i class=" icon-folder-open-alt"></i>   Catalog Category
+
+                        <span class="pull-right">
+                            <i class="icon-angle-left"></i>
+                        </span>
+
+                    </a>
+                    <ul class="collapse" id="component-nav-6">
+                        
+                        <li class=""><a href="/Admin/Catalog/Years"><i class="icon-angle-right"></i> Years</a></li>
+                        <li class=""><a href="/Admin/Catalog/Brand"><i class="icon-angle-right"></i> Brands</a></li>
+                        <li class=""><a href="/Admin/Catalog/Model"><i class="icon-angle-right"></i> Model</a></li>
+                        <li class=""><a href="/Admin/Catalog/Options"><i class="icon-angle-right"></i> Options</a></li>
+                        <li class=""><a href="/Admin/Catalog/Size"><i class="icon-angle-right"></i> Size</a></li>
+                      
                     </ul>
                 </li>
                 <li><a href="#"> <i class=" icon-folder-open-alt"></i>Schedule Service </a></li>

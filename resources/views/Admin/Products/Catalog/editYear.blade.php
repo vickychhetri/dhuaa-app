@@ -16,12 +16,16 @@
     </div>
 </div>
 
+
+
+
+
 <div class="row">
     <div class="col-lg-12">
         <div class="box dark">
             <header>
                 <div class="icons"><i class="icon-edit"></i></div>
-                <h5> <a href="/Admin/Add-ProductType" class="btn btn-primary"> New Category </a> <br/> or Edit Product Category </h5>
+                <h5>Add New Product Category </h5>
                 <div class="toolbar">
                     <ul class="nav">
 
@@ -34,35 +38,29 @@
                 </div>
             </header>
             <div id="div-1" class="accordion-body collapse in body">
-                <form class="form-horizontal" action="/Products/EditProductType" method="post">
+                <form class="form-horizontal" action="/Admin/Catalog/EYears" method="post">
                     {{csrf_field()}}
                     <div class="form-group">
-                        <label for="text1" class="control-label col-lg-4"> Type of the Product</label>
+                        <label for="text1" class="control-label col-lg-4"> Year </label>
 
                         <div class="col-lg-8">
-                            <input type="text" id="text1" placeholder="Type of the Product:  Tyre, Accessories"
-                                class="form-control" name="TypeProduct" value="{{$pdata->typeName}}" />
-                            <input type="hidden" id="text1" placeholder="Type of the Product:  Tyre, Accessories"
-                                class="form-control" name="id" value="{{$pdata->id}}" readonly/>
+                        <input type="hidden" id="text1"  name="id" value="{{$yearData->id}}"/>    
+                        <input type="text" id="text1" placeholder="Year" 
+                            class="form-control" name="catalogYear" value="{{$yearData->year}}"/>
+                            <span style="color:red;">
+                                @error('catalogYear')
+                                {{$message}}
+                                @enderror
+                            </span>
                         </div>
+
                     </div>
 
-
                     <div class="form-group">
-                        <label for="text4" class="control-label col-lg-4"> Description of the Product Type (if
-                            any)</label>
+                        <label for="tags" class="control-label col-lg-4"> Save Record</label>
 
                         <div class="col-lg-8">
-                            <textarea id="text4" class="form-control" name="Description">{{$pdata->description}}</textarea>
-                        </div>
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="tags" class="control-label col-lg-4"> Edit Record</label>
-
-                        <div class="col-lg-8">
-                            <input type="submit" class="btn btn-block btn-primary" value="Edit Now"/>
+                            <input type="submit" class="btn btn-block btn-primary" />
                         </div>
                     </div>
                     <!-- Login failed  message-->
@@ -78,13 +76,14 @@
                     </div>
                     @endif
                 </form>
+                
             </div>
         </div>
     </div>
 </div>
 <hr />
 
-<x-Administrator.Product.Listtypeproduct/>
+<x-Administrator.Product.Catalog.Listyear/>
 @endsection
 @section('footercontainebelow')
 <!-- PAGE LEVEL SCRIPTS -->

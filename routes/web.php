@@ -166,9 +166,6 @@ Route::get('/Admin/Product/Addtional-Information/{id}', 'App\Http\Controllers\Pr
 Route::post('/Admin/Product/Addtional-Information', 'App\Http\Controllers\ProductmoreinfoController@store');
 Route::post('/Admin/Product/EAddtional-Information', 'App\Http\Controllers\ProductmoreinfoController@update');
 
-
-
-
 ##############################################################
 #   Create New Dynamic Pages Routes : VICKY CHHETRI          # 
 ##############################################################
@@ -185,5 +182,36 @@ Route::get('/Admin/List-Pages', 'App\Http\Controllers\UserpageController@showlis
 Route::get('/Pages/EditPage/{id}', 'App\Http\Controllers\UserpageController@edit');
 Route::post('/Pages/EditPage/', 'App\Http\Controllers\UserpageController@update');
 Route::get('/Pages/DeletePage/{id}', 'App\Http\Controllers\UserpageController@destroy');
+
+##############################################################
+#   Catalog of the product search : VICKY CHHETRI            # 
+##############################################################
+#YEAR
+//open add form
+Route::get('/Admin/Catalog/Years', 'App\Http\Controllers\ProductyearController@index');
+//year add submit 
+Route::post('/Admin/Catalog/Years', 'App\Http\Controllers\ProductyearController@store');
+//open edit form
+Route::get('/Admin/Catalog/EYears/{id}', 'App\Http\Controllers\ProductyearController@edit');
+//submit edit form
+Route::post('/Admin/Catalog/EYears', 'App\Http\Controllers\ProductyearController@update');
+//Delete
+Route::get('/Admin/Catalog/DYears/{id}', 'App\Http\Controllers\ProductyearController@destroy');
+
+#BRANDS
+//open add form
+Route::get('/Admin/Catalog/Brand', 'App\Http\Controllers\ProductbrandController@index');
+//year add submit 
+Route::post('/Admin/Catalog/Brand', 'App\Http\Controllers\ProductbrandController@store');
+//open edit form
+Route::get('/Admin/Catalog/EBrand/{id}', 'App\Http\Controllers\ProductbrandController@edit');
+//submit edit form
+Route::post('/Admin/Catalog/EBrand', 'App\Http\Controllers\ProductbrandController@update');
+//Delete
+Route::get('/Admin/Catalog/DBrand/{id}', 'App\Http\Controllers\ProductbrandController@destroy');
+
+
+
+
 
 });
