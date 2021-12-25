@@ -52,7 +52,7 @@ class ProductyearController extends Controller
             }
         } catch (QueryException $e) {
             // print($e); 
-            echo "Query Exception !.";
+            echo "Query Exception !.".$e;
         } catch (Exception $e) {
             echo "Exception !.".$e;
         }   
