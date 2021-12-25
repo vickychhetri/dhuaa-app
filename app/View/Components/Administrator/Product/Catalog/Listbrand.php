@@ -15,8 +15,8 @@ class Listbrand extends Component
      */
     public function __construct()
     {
-        $this->listbrands = DB::table('productbrands')
-        ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
+        $this->listbrands = DB::table('productyears')
+        ->join('productbrands', 'productyears.id', '=', 'productbrands.yearId')
         ->select('productbrands.*','productyears.year')
         ->get();
     }
