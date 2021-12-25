@@ -52,11 +52,11 @@ class ProductyearController extends Controller
             }
         } catch (QueryException $e) {
             // print($e); 
-            echo "Query Exception !.".$e;
+            echo "Query Exception !.";
         } catch (Exception $e) {
-            echo "Exception !.".$e;
-        }   
-        // return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+            echo "Exception !.";
+        }
+        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
     }
 
     /**
