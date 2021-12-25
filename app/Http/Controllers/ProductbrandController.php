@@ -39,7 +39,7 @@ class ProductbrandController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+        public function store(Request $request)
     {
         $request->validate([
             'Year' => 'required|numeric',
@@ -58,11 +58,11 @@ class ProductbrandController extends Controller
             }
         } catch (QueryException $e) {
             // print($e); 
-            echo "Query Exception !.";
+            echo "Query Exception !.".$e;
         } catch (Exception $e) {
-            echo "Exception !.";
+            echo "Exception !.".$e;
         }
-        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+        // return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
        
     }
 
