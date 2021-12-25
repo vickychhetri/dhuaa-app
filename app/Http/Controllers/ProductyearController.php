@@ -54,9 +54,9 @@ class ProductyearController extends Controller
             // print($e); 
             echo "Query Exception !.";
         } catch (Exception $e) {
-            echo "Exception !.";
-        }
-        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+            echo "Exception !.".$e;
+        }   
+        // return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
     }
 
     /**
