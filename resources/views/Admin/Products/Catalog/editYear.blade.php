@@ -1,5 +1,5 @@
 @extends('Admin.layoutadmin')
-@section('title','Admin Dashboard - Add Product Category | Dhuaa.com')
+@section('title','Admin Dashboard - Add Product Category Year | Dhuaa.com')
 @section('metaheadercontainer')
 @endsection
 @section('headercontainer')
@@ -12,7 +12,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Add Product Category</h1>
+        <h1 class="page-header">Add Product Category Year</h1>
     </div>
 </div>
 
@@ -25,7 +25,7 @@
         <div class="box dark">
             <header>
                 <div class="icons"><i class="icon-edit"></i></div>
-                <h5>Add New Product Category </h5>
+                <h5>Add New Product Category Year</h5>
                 <div class="toolbar">
                     <ul class="nav">
 
