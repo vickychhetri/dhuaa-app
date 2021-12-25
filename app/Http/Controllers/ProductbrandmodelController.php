@@ -52,7 +52,7 @@ class ProductbrandmodelController extends Controller
             'modelName'=>'required|max:250'
         ]);
         try {
-            $database_agent = new Productbrand;
+            $database_agent = new Productbrandmodel;
             $database_agent->brandId = $request->brandId;
             $database_agent->model = $request->modelName;
             //Sesion id :get
