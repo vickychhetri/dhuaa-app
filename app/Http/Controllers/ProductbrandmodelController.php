@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 // use App\Models\Productyear;
 use App\Models\Productbrand;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Database\QueryException;
+use App\Http\Controllers\Agentsessionhandler;
+use Exception;
 
 class ProductbrandmodelController extends Controller
 {
@@ -18,16 +20,13 @@ class ProductbrandmodelController extends Controller
      */
     public function index()
     {
-        // $brands=Productbrand::all();
-        
         $listbrands = DB::table('productbrands')
         ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
         ->select('productbrands.*','productyears.*')
         ->get();
 
         return view('Admin.Products.Catalog.addModel')
-        ->with('BRANDS',$listbrands);
-        
+        ->with('BRANDS',$listbrands);   
     }
 
     /**
@@ -48,7 +47,29 @@ class ProductbrandmodelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'brandId' => 'required|numeric',
+            'modelName'=>'required|max:250'
+        ]);
+        try {
+            $database_agent = new Productbrand;
+            $database_agent->brandId = $request->brandId;
+            $database_agent->model = $request->modelName;
+            //Sesion id :get
+            $agent = new Agentsessionhandler;
+            $database_agent->parentId = $agent->getSessionId();
+            $res = $database_agent->save();
+            if ($res == "1") {
+                return redirect()->back()->with('message', 'Record added Successfully !');
+            }
+        } catch (QueryException $e) {
+            // print($e); 
+            echo "Query Exception !.";
+        } catch (Exception $e) {
+            echo "Exception !.";
+        }
+         return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+       
     }
 
     /**

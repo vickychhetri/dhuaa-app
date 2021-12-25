@@ -39,9 +39,9 @@
                     <div class="form-group">
                         <label for="text1" class="control-label col-lg-4"> Year-Brand </label>
                         <div class="col-lg-8">
-                            <select class="form-control" name="Year">
+                            <select class="form-control" name="brandId">
                                 @foreach($BRANDS as $BRAND)
-                                <option value="{{$BRAND->id}}"> {{$BRAND->year}} {{$BRAND->brand}} </option>
+                                <option value="{{$BRAND->id}}"> {{$BRAND->year}} - {{$BRAND->brand}} </option>
                                 @endforeach
                             </select>
                         </div>
