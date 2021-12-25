@@ -84,7 +84,7 @@
 </div>
 <hr />
 
-
+<x-Administrator.Product.Catalog.Listyear/>
 @endsection
 @section('footercontainebelow')
 <!-- PAGE LEVEL SCRIPTS -->
