@@ -17,7 +17,7 @@ class Listbrand extends Component
     {
         $this->listbrands = DB::table('productbrands')
         ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
-        ->select('productbrands.*,productyears.*')
+        ->select('productbrands.*','productyears.year')
         ->get();
     }
 
