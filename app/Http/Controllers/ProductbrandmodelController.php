@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Productbrandmodel;
 use Illuminate\Http\Request;
+// use App\Models\Productyear;
+use App\Models\Productbrand;
+use Illuminate\Support\Facades\DB;
+
 
 class ProductbrandmodelController extends Controller
 {
@@ -14,7 +18,16 @@ class ProductbrandmodelController extends Controller
      */
     public function index()
     {
-        //
+        // $brands=Productbrand::all();
+        
+        $listbrands = DB::table('productbrands')
+        ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
+        ->select('productbrands.*','productyears.*')
+        ->get();
+
+        return view('Admin.Products.Catalog.addModel')
+        ->with('BRANDS',$listbrands);
+        
     }
 
     /**

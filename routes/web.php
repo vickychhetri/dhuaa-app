@@ -211,6 +211,20 @@ Route::post('/Admin/Catalog/EBrand', 'App\Http\Controllers\ProductbrandControlle
 Route::get('/Admin/Catalog/DBrand/{id}', 'App\Http\Controllers\ProductbrandController@destroy');
 
 
+#MODELS
+//open add form
+Route::get('/Admin/Catalog/Model', 'App\Http\Controllers\ProductbrandmodelController@index');
+//year add submit 
+Route::post('/Admin/Catalog/Model', 'App\Http\Controllers\ProductbrandmodelController@store');
+//open edit form
+Route::get('/Admin/Catalog/EModel/{id}', 'App\Http\Controllers\ProductbrandmodelController@edit');
+//submit edit form
+Route::post('/Admin/Catalog/EModel', 'App\Http\Controllers\ProductbrandmodelController@update');
+//Delete
+Route::get('/Admin/Catalog/DModel/{id}', 'App\Http\Controllers\ProductbrandmodelController@destroy');
+
+
+
 
 
 
