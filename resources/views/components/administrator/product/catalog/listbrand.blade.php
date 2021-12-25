@@ -20,7 +20,9 @@
                     @foreach ($listbrands as $brand)
 
                         <tr class="odd gradeX">
-                            <td>{{ $brand->year}}</td>
+                            <td>
+                                <!-- {{ $brand->year}} -->
+                            </td>
                             <td>{{ $brand->brand}}</td>
                             <td> {{ $brand->created_at}}</td>
                             <td class="center">{{ $brand->updated_at}}</td>
