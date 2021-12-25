@@ -21,7 +21,7 @@
 
                         <tr class="odd gradeX">
                             <td>
-                                {{ $brand->yearId}}
+                                {{ $brand->year}}
                             </td>
                             <td>{{ $brand->brand}}</td>
                             <td> {{ $brand->created_at}}</td>
