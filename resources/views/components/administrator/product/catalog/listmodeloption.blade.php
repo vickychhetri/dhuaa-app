@@ -33,7 +33,7 @@
                             </td>
                             <td>{{ $modeloption->model}}</td>
                             <td> {{ $modeloption->created_at}}</td>
-                            <td class="center">{{ $model->updated_at}}</td>
+                            <td class="center">{{ $modeloption->updated_at}}</td>
                             <td class="center"> <a href="{{ $modeloption->id}}" class="btn btn-primary"> Edit</a> </td>
                             <td class="center"> <a href="{{ $modeloption->id}}" class="btn btn-danger"> delete</a> </td>
                         </tr>
