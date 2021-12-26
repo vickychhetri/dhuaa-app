@@ -1,5 +1,5 @@
 @extends('Admin.layoutadmin')
-@section('title','Admin Dashboard - Add Model | Dhuaa.com')
+@section('title','Admin Dashboard - Add Model Option| Dhuaa.com')
 
 @section('metaheadercontainer')
 @endsection
@@ -13,7 +13,7 @@
 @section('container')
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header"> Add Model </h1>
+        <h1 class="page-header"> Add Model Option </h1>
     </div>
 </div>
 <div class="row">
