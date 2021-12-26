@@ -18,12 +18,14 @@ class ProductmodeloptionController extends Controller
     public function index()
     {
         
-        $listoptions = DB::table('productbrandmodels')
+        $listmodelOps = DB::table('productbrandmodels')
         ->join('productbrands', 'productbrandmodels.brandId', '=', 'productbrands.id')
         ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
         ->select('productbrandmodels.*','productbrands.*','productyears.year')
         ->get();
-        print_r($listoptions);
+        // print_r($listoptions);
+        return view('Admin.Products.Catalog.addModelOption')
+        ->with('ModelOption',$listmodelOps);
     }
 
     /**
@@ -44,7 +46,7 @@ class ProductmodeloptionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        print_r($request);
     }
 
     /**
