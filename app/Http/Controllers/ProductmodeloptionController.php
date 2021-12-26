@@ -61,11 +61,11 @@ class ProductmodeloptionController extends Controller
             }
         } catch (QueryException $e) {
             // print($e); 
-            echo "Query Exception !.";
+            echo "Query Exception !.".$e;
         } catch (Exception $e) {
-            echo "Exception !.";
+            echo "Exception !.".$e;
         }
-        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+        // return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
       
     }
 
