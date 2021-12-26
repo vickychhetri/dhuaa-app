@@ -85,7 +85,7 @@
     </div>
 </div>
 <hr />
-<x-Administrator.Product.Catalog.Listmodel/>
+<x-Administrator.Product.Catalog.Listmodeloption/>
 @endsection
 @section('footercontainebelow')
 <!-- PAGE LEVEL SCRIPTS -->
