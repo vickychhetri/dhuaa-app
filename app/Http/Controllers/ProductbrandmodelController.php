@@ -22,7 +22,7 @@ class ProductbrandmodelController extends Controller
     {
         $listbrands = DB::table('productbrands')
         ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
-        ->select('productbrands.*','productyears.*')
+        ->select('productbrands.*','productyears.year')
         ->get();
 
         return view('Admin.Products.Catalog.addModel')
