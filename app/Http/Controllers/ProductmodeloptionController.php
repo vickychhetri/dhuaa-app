@@ -44,7 +44,29 @@ class ProductmodeloptionController extends Controller
      */
     public function store(Request $request)
     {
-        print_r($request->optionName);
+        $request->validate([
+            'modelId' => 'required|numeric',
+            'optionName'=>'required|max:250'
+        ]);
+        try {
+            $database_agent = new Productmodeloption;
+            $database_agent->modelId = $request->modelId;
+            $database_agent->optionM = $request->optionName;
+            //Sesion id :get
+            $agent = new Agentsessionhandler;
+            $database_agent->parentId = $agent->getSessionId();
+            $res = $database_agent->save();
+            if ($res == "1") {
+                return redirect()->back()->with('message', 'Record added Successfully !');
+            }
+        } catch (QueryException $e) {
+            // print($e); 
+            echo "Query Exception !.";
+        } catch (Exception $e) {
+            echo "Exception !.";
+        }
+        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+      
     }
 
     /**
