@@ -44,7 +44,7 @@ class ProductmodeloptionController extends Controller
      */
     public function store(Request $request)
     {
-        print_r($request);
+        print_r($request->optionName);
     }
 
     /**
