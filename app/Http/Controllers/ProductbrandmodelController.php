@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Productbrandmodel;
 use Illuminate\Http\Request;
 // use App\Models\Productyear;
-use App\Models\Productbrand;
+// use App\Models\Productbrand;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\QueryException;
 use App\Http\Controllers\Agentsessionhandler;

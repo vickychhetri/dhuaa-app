@@ -203,6 +203,8 @@ Route::get('/Admin/Catalog/DYears/{id}', 'App\Http\Controllers\ProductyearContro
 Route::get('/Admin/Catalog/Brand', 'App\Http\Controllers\ProductbrandController@index');
 //year add submit 
 Route::post('/Admin/Catalog/Brand', 'App\Http\Controllers\ProductbrandController@store');
+
+//Pening codes
 //open edit form
 Route::get('/Admin/Catalog/EBrand/{id}', 'App\Http\Controllers\ProductbrandController@edit');
 //submit edit form
@@ -216,12 +218,30 @@ Route::get('/Admin/Catalog/DBrand/{id}', 'App\Http\Controllers\ProductbrandContr
 Route::get('/Admin/Catalog/Model', 'App\Http\Controllers\ProductbrandmodelController@index');
 //year add submit 
 Route::post('/Admin/Catalog/Model', 'App\Http\Controllers\ProductbrandmodelController@store');
+
+//Pening codes
 //open edit form
 Route::get('/Admin/Catalog/EModel/{id}', 'App\Http\Controllers\ProductbrandmodelController@edit');
 //submit edit form
 Route::post('/Admin/Catalog/EModel', 'App\Http\Controllers\ProductbrandmodelController@update');
 //Delete
 Route::get('/Admin/Catalog/DModel/{id}', 'App\Http\Controllers\ProductbrandmodelController@destroy');
+
+
+#MODELOPTIONS
+//open add form
+Route::get('/Admin/Catalog/Modeloption', 'App\Http\Controllers\ProductmodeloptionController@index');
+//year add submit 
+Route::post('/Admin/Catalog/Modeloption', 'App\Http\Controllers\ProductmodeloptionController@store');
+
+//Pening codes
+//open edit form
+Route::get('/Admin/Catalog/EModeloption/{id}', 'App\Http\Controllers\ProductmodeloptionController@edit');
+//submit edit form
+Route::post('/Admin/Catalog/EModeloption', 'App\Http\Controllers\ProductmodeloptionController@update');
+//Delete
+Route::get('/Admin/Catalog/DModeloption/{id}', 'App\Http\Controllers\ProductmodeloptionController@destroy');
+
 
 
 
