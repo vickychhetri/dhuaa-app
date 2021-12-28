@@ -227,7 +227,7 @@
                         <li class=""><a href="/Admin/Catalog/Model"><i class="icon-angle-right"></i> Model</a></li>
                         <li class=""><a href="/Admin/Catalog/Modeloption"><i class="icon-angle-right"></i> Options</a></li>
                         <li class=""><a href="/Admin/Catalog/Size"><i class="icon-angle-right"></i> Size</a></li>
-                      
+                        <li class=""><a href="/Admin/Catalog/Listing"><i class="icon-angle-right"></i> Product Listing</a></li>
                     </ul>
                 </li>
                 <li><a href="#"> <i class=" icon-folder-open-alt"></i>Schedule Service </a></li>
