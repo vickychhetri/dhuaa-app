@@ -23,7 +23,7 @@ class ProductoptionsizeController extends Controller
         ->join('productbrandmodels', 'productbrandmodels.optionMId', '=', 'productbrandmodels.id')
         ->join('productbrands', 'productbrandmodels.brandId', '=', 'productbrands.id')
         ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
-        ->select('productoptionsizes.*,productbrandmodels.model','productbrands.brand','productyears.year')
+        ->select('productoptionsizes.*','productbrandmodels.model','productbrands.brand','productyears.year')
         ->get();
         print_r($listmodelOpsSize);
         // return view('Admin.Products.Catalog.addModelOptionSize')
