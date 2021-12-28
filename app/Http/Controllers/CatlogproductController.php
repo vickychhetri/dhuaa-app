@@ -15,47 +15,23 @@ class CatlogproductController extends Controller
      */
     public function index()
     {
-        // $students = DB::table('products')
-        // ->select('products.*')
-        // ->whereNotExists( function ($query) {
-        //     $query->select(DB::raw(1))
-        //     ->from('enrollments')
-        //     ->whereRaw('students.id = enrollments.student_id')
-        //     ->where('enrollments.academic_id', '=', $current_academic->id);
-        // })
-        // ->get();
-
-
-
         $notListedProducts = DB::table('products')
         ->leftJoin('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
         ->whereNull('catlogproducts.productId')
         ->select('products.*')
         ->get();
-
-
-        // $notListedProducts = DB::table('products')
-        // ->join('catlogproducts', 'products.id', '!=', 'catlogproducts.productId')
-        // ->select('products.*')
-        // ->get();
-
-        // 
+ 
         $listedProducts = DB::table('products')
         ->join('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
         ->select('products.*')
         ->get();
 
-        print_r($notListedProducts);
-        print_r($listedProducts);
-        // $this->listmodeloptionsize = DB::table('productoptionsizes')
-        // ->join('productmodeloptions', 'productoptionsizes.optionMId', '=', 'productmodeloptions.id')
-        // ->join('productbrandmodels', 'productmodeloptions.modelId', '=', 'productbrandmodels.id')
-        // ->join('productbrands', 'productbrandmodels.brandId', '=', 'productbrands.id')
-        // ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
-        // ->select('productoptionsizes.*','productmodeloptions.optionM','productbrandmodels.model','productbrands.brand','productyears.year')
-        // ->get();
     }
+    public function indexhome(){
+    
+        return view('Admin.Products.Catalog.catlogListing');
 
+            }
 
     /**
      * Show the form for creating a new resource.

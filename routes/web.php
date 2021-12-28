@@ -261,6 +261,6 @@ Route::get('/Admin/Catalog/DSize/{id}', 'App\Http\Controllers\ProductoptionsizeC
 //ListingProduct to Catlog area
 
 //open listing form
-Route::get('/Admin/Catalog/Listing', 'App\Http\Controllers\CatlogproductController@index');
+Route::get('/Admin/Catalog/Listing', 'App\Http\Controllers\CatlogproductController@indexhome');
 
 });
