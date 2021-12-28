@@ -21,7 +21,7 @@
         <div class="box dark">
             <header>
                 <div class="icons"><i class="icon-edit"></i></div>
-                <h5>Listing Product in Catalog </h5>
+                <h5>Listing Product in Catalog {{$SIZE}}</h5>
                 <div class="toolbar">
                     <ul class="nav">
                         <li>
