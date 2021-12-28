@@ -22,16 +22,13 @@ class CatlogproductController extends Controller
         ->whereNull('catlogproducts.productId')
         ->select('products.*')
         ->get();
-
-         print_r($notListedProducts);
-        
         $listedProducts = DB::table('products')
         ->join('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
         ->join('productoptionsizes', 'catlogproducts.catalogSizeId', '=', 'productoptionsizes.id')
         ->where('productoptionsizes.id','=',$request->sizeOption)
         ->select('products.*')
         ->get();
-        
+
         return view('Admin.Products.Catalog.catalogSizeList')
         ->with('listedProducts',$listedProducts)
         ->with('SIZE',$SIZE)
