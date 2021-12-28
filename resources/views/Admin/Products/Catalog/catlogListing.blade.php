@@ -36,9 +36,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         <form action="Admin/Catalog/Editor" method="post">
-                            Choose Year-Brand-Model-Option-Size <br />
+                            Choose Size-Option-Model-Brand-Year <br />
                             <select class="form-control">
                                 <option value="">-</option>
+                                @foreach($ModelOptionSize as $optionsize)
+                                <option value="$optionsize->id"> {{$optionsize->size}}
+                                    {{$optionsize->optionM}}
+                                    - {{$optionsize->model}} - {{$optionsize->brand}}
+                                    - {{$optionsize->year}} </option>
+                                @endforeach
                             </select>
                             <br />
 

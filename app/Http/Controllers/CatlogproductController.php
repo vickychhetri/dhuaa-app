@@ -29,8 +29,16 @@ class CatlogproductController extends Controller
     }
     public function indexhome()
     {
-        return view('Admin.Products.Catalog.catlogListing');
-            
+
+        $listmodeloptionsize = DB::table('productoptionsizes')
+        ->join('productmodeloptions', 'productoptionsizes.optionMId', '=', 'productmodeloptions.id')
+        ->join('productbrandmodels', 'productmodeloptions.modelId', '=', 'productbrandmodels.id')
+        ->join('productbrands', 'productbrandmodels.brandId', '=', 'productbrands.id')
+        ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
+        ->select('productoptionsizes.*','productmodeloptions.optionM','productbrandmodels.model','productbrands.brand','productyears.year')
+        ->get();
+        return view('Admin.Products.Catalog.catlogListing')
+        ->with('ModelOptionSize',$listmodeloptionsize);
     }
 
     /**
