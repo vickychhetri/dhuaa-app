@@ -42,7 +42,7 @@
                             </tr>
                             @foreach($notListedProducts as $product)
                             <tr> <td>
-                                {{$product->id}}
+                                {{$product->productName}}
                             </td></tr>
                             @endforeach
                         </table>
@@ -54,7 +54,7 @@
                             </tr>
                             @foreach($listedProducts as $productNot)
                             <tr> <td>
-                                {{$productNot->id}}
+                                {{$productNot->productName}}
                             </td></tr>
                             @endforeach
                         </table>

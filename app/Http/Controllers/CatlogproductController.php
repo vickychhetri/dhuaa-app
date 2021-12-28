@@ -15,8 +15,13 @@ class CatlogproductController extends Controller
      */
     public function index(Request $request)
     {
-        $SIZE=$request->sizeOption;
-        
+        $ID=$request->sizeOption;
+        $SIZE = DB::table('productoptionsizes')
+        ->where('productoptionsizes.id','=',$ID)
+        ->select('productoptionsizes.size')
+        ->get()
+        ->first();
+
         $notListedProducts = DB::table('products')
         ->leftJoin('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
         ->whereNull('catlogproducts.productId')
@@ -25,13 +30,13 @@ class CatlogproductController extends Controller
         $listedProducts = DB::table('products')
         ->join('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
         ->join('productoptionsizes', 'catlogproducts.catalogSizeId', '=', 'productoptionsizes.id')
-        ->where('productoptionsizes.id','=',$request->sizeOption)
+        ->where('productoptionsizes.id','=',$ID)
         ->select('products.*')
         ->get();
 
         return view('Admin.Products.Catalog.catalogSizeList')
         ->with('listedProducts',$listedProducts)
-        ->with('SIZE',$SIZE)
+        ->with('SIZE',$SIZE->size)
         ->with('notListedProducts',$notListedProducts);
     }
     public function indexhome()
