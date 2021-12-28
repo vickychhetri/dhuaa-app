@@ -23,7 +23,10 @@
                         @foreach ($listmodeloptionsize as $modeloptionsize)
 
                         <tr class="odd gradeX">
-                            <td>
+                        <td>
+                                {{ $modeloptionsize->size}}
+                            </td>  
+                        <td>
                                 {{ $modeloptionsize->optionM}}
                             </td>
                             <td>

@@ -1,5 +1,5 @@
 @extends('Admin.layoutadmin')
-@section('title','Admin Dashboard - Add Model Option| Dhuaa.com')
+@section('title','Admin Dashboard - Add Model Option Size| Dhuaa.com')
 
 @section('metaheadercontainer')
 @endsection
