@@ -31,7 +31,11 @@ class CatlogproductController extends Controller
         ->where('productoptionsizes.id','=',$request->sizeOption)
         ->select('products.*')
         ->get();
-
+        
+        return view('Admin.Products.Catalog.catalogSizeList')
+        ->with('listedProducts',$listedProducts)
+        ->with('SIZE',$SIZE)
+        ->with('notListedProducts',$notListedProducts);
     }
     public function indexhome()
     {
