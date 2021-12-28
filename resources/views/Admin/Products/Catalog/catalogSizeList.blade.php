@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-md-6">
 
-                        <table>
+                        <table class="table">
                             <tr>
                                 <th> Product Not Listed in Catalog</th>
                             </tr>
@@ -48,13 +48,13 @@
                         </table>
                     </div>
                     <div class="col-md-6">
-                    <table>
+                    <table class="table">
                             <tr>
                                 <th> Product Listed Under Catalog {{$SIZE}}</th>
                             </tr>
-                            @foreach($listedProducts as $product)
+                            @foreach($listedProducts as $productNot)
                             <tr> <td>
-                                {{$product->id}}
+                                {{$productNot->id}}
                             </td></tr>
                             @endforeach
                         </table>
