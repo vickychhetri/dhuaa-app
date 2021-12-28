@@ -34,7 +34,7 @@
                 </div>
             </header>
             <div id="div-1" class="accordion-body collapse in body">
-                <form class="form-horizontal" action="/Admin/Catalog/Modeloption" method="post">
+                <form class="form-horizontal" action="/Admin/Catalog/Size" method="post">
                     {{csrf_field()}}
                     <div class="form-group">
                         <label for="text1" class="control-label col-lg-4"> Year-Brand-Model-Option </label>
