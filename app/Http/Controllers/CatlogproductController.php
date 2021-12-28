@@ -15,11 +15,31 @@ class CatlogproductController extends Controller
      */
     public function index()
     {
+        // $students = DB::table('products')
+        // ->select('products.*')
+        // ->whereNotExists( function ($query) {
+        //     $query->select(DB::raw(1))
+        //     ->from('enrollments')
+        //     ->whereRaw('students.id = enrollments.student_id')
+        //     ->where('enrollments.academic_id', '=', $current_academic->id);
+        // })
+        // ->get();
+
+
+
         $notListedProducts = DB::table('products')
+        ->leftJoin('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
+        ->whereNull('catlogproducts.productId')
         ->select('products.*')
         ->get();
 
-        
+
+        // $notListedProducts = DB::table('products')
+        // ->join('catlogproducts', 'products.id', '!=', 'catlogproducts.productId')
+        // ->select('products.*')
+        // ->get();
+
+        // 
         $listedProducts = DB::table('products')
         ->join('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
         ->select('products.*')
