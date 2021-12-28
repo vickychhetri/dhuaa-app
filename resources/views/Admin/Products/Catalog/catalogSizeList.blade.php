@@ -41,21 +41,29 @@
                                 <th> Product Not Listed in Catalog</th>
                             </tr>
                             @foreach($notListedProducts as $product)
-                            <tr> <td>
-                                {{$product->productName}}
-                            </td></tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <span> {{$product->productName}} </span>
+                                        <a href="#" class="btn btn-success"> Move</a>
+                                    </p>
+                                </td>
+                            </tr>
                             @endforeach
                         </table>
                     </div>
                     <div class="col-md-6">
-                    <table class="table">
+                        <table class="table">
                             <tr>
                                 <th> Product Listed Under Catalog {{$SIZE}}</th>
                             </tr>
                             @foreach($listedProducts as $productNot)
-                            <tr> <td>
-                                {{$productNot->productName}}
-                            </td></tr>
+                            <tr>
+                            <p>
+                                        <span> {{$productNot->productName}} </span>
+                                        <a href="#" class="btn btn-danger"> Remove</a>
+                                    </p>
+                            </tr>
                             @endforeach
                         </table>
 
