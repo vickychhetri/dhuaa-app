@@ -35,12 +35,12 @@
             <div id="div-1" class="accordion-body collapse in body">
                 <div class="row">
                     <div class="col-md-6">
-                        <form action="Admin/Catalog/Editor" method="post">
+                        <form action="/Admin/Catalog/Editor" method="get">
                             Choose Size-Option-Model-Brand-Year <br />
-                            <select class="form-control">
+                            <select class="form-control" name="sizeOption">
                                 <option value="">-</option>
                                 @foreach($ModelOptionSize as $optionsize)
-                                <option value="$optionsize->id"> {{$optionsize->size}}
+                                <option value="{{$optionsize->id}}"> {{$optionsize->size}}
                                     {{$optionsize->optionM}}
                                     - {{$optionsize->model}} - {{$optionsize->brand}}
                                     - {{$optionsize->year}} </option>

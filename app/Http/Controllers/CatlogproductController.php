@@ -13,16 +13,23 @@ class CatlogproductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $SIZE=$request->sizeOption;
+        
         $notListedProducts = DB::table('products')
         ->leftJoin('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
         ->whereNull('catlogproducts.productId')
+        ->where('catlogproducts.catalogSizeId','=',$request->sizeOption)
         ->select('products.*')
         ->get();
- 
+
+         print_r($notListedProducts);
+        
         $listedProducts = DB::table('products')
         ->join('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
+        ->join('productoptionsizes', 'catlogproducts.catalogSizeId', '=', 'productoptionsizes.id')
+        ->where('productoptionsizes.id','=',$request->sizeOption)
         ->select('products.*')
         ->get();
 
