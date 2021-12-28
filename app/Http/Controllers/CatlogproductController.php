@@ -20,7 +20,6 @@ class CatlogproductController extends Controller
         $notListedProducts = DB::table('products')
         ->leftJoin('catlogproducts', 'products.id', '=', 'catlogproducts.productId')
         ->whereNull('catlogproducts.productId')
-        ->where('catlogproducts.catalogSizeId','=',$request->sizeOption)
         ->select('products.*')
         ->get();
 
