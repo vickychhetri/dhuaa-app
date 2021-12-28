@@ -47,8 +47,8 @@
                     </div>
                     <div class="col-md-6">
 
-                        <div class="wall">
-                            message
+                        <div class="bg-success">
+                            Select Area where you want to show your product when user search for the product.
                         </div>
 
                     </div>
