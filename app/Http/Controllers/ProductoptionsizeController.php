@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Productoptionsize;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\QueryException;
+use App\Http\Controllers\Agentsessionhandler;
+use Exception;
 
 class ProductoptionsizeController extends Controller
 {
@@ -14,7 +18,16 @@ class ProductoptionsizeController extends Controller
      */
     public function index()
     {
-        //
+        
+        $listmodelOpsSize = DB::table('productoptionsizes')
+        ->join('productbrandmodels', 'productbrandmodels.optionMId', '=', 'productbrandmodels.id')
+        ->join('productbrands', 'productbrandmodels.brandId', '=', 'productbrands.id')
+        ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
+        ->select('productoptionsizes.*,productbrandmodels.model','productbrands.brand','productyears.year')
+        ->get();
+        print_r($listmodelOpsSize);
+        // return view('Admin.Products.Catalog.addModelOptionSize')
+        // ->with('ModelOptionSize',$listmodelOpsSize);
     }
 
     /**

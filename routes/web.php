@@ -242,6 +242,19 @@ Route::post('/Admin/Catalog/EModeloption', 'App\Http\Controllers\Productmodelopt
 //Delete
 Route::get('/Admin/Catalog/DModeloption/{id}', 'App\Http\Controllers\ProductmodeloptionController@destroy');
 
+#SizeOPTIONS
+//open add form
+Route::get('/Admin/Catalog/Size', 'App\Http\Controllers\ProductoptionsizeController@index');
+//year add submit 
+Route::post('/Admin/Catalog/Size', 'App\Http\Controllers\ProductoptionsizeController@store');
+
+//Pening codes
+//open edit form
+Route::get('/Admin/Catalog/ESize/{id}', 'App\Http\Controllers\ProductoptionsizeController@edit');
+//submit edit form
+Route::post('/Admin/Catalog/ESize', 'App\Http\Controllers\ProductoptionsizeController@update');
+//Delete
+Route::get('/Admin/Catalog/DSize/{id}', 'App\Http\Controllers\ProductoptionsizeController@destroy');
 
 
 
