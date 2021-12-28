@@ -1,7 +1,7 @@
 <div>
     <div class="panel panel-default">
         <div class="panel-heading">
-            List Product Category Model Option
+            List Product Category Model Option Size
         </div>
         <div class="panel-body">
             <div class="table-responsive">
