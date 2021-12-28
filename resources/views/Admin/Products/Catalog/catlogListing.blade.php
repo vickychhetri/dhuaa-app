@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-md-6">
                         <div>
-                            <p class="bg-success text-white" style="padding:16px;">
+                            <p class="bg-success text-white" style="padding:16px;background-color:#b8ffcf;color:green;">
                                 Select Area where you want to show your
                                 product when user search for the product.
                             </p>
