@@ -27,11 +27,11 @@ class CatlogproductController extends Controller
         ->get();
 
     }
-    public function indexhome(){
-    
+    public function indexhome()
+    {
         return view('Admin.Products.Catalog.catlogListing');
-
-            }
+            
+    }
 
     /**
      * Show the form for creating a new resource.
