@@ -16,7 +16,6 @@ class CatlogproductController extends Controller
     public function index()
     {
         $notListedProducts = DB::table('products')
-        ->join('catlogproducts', 'products.id', '!=', 'catlogproducts.productId')
         ->select('products.*')
         ->get();
 
