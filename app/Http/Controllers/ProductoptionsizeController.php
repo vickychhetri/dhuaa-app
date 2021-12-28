@@ -48,7 +48,7 @@ class ProductoptionsizeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo $request->sizeName;
     }
 
     /**
