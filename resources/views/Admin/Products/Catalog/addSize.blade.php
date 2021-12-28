@@ -39,7 +39,7 @@
                     <div class="form-group">
                         <label for="text1" class="control-label col-lg-4"> Year-Brand-Model-Option </label>
                         <div class="col-lg-8">
-                            <select class="form-control" name="modelId">
+                            <select class="form-control" name="modeloptionId">
                                 @foreach($ModelOptionSize as $MODELOption)
                                 <option value="{{$MODELOption->id}}"> {{$MODELOption->year}} - {{$MODELOption->brand}} - {{$MODELOption->model}} - {{$MODELOption->optionM}}</option>
                                 @endforeach
