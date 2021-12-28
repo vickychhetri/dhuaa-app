@@ -225,7 +225,7 @@
                         <li class=""><a href="/Admin/Catalog/Years"><i class="icon-angle-right"></i> Years</a></li>
                         <li class=""><a href="/Admin/Catalog/Brand"><i class="icon-angle-right"></i> Brands</a></li>
                         <li class=""><a href="/Admin/Catalog/Model"><i class="icon-angle-right"></i> Model</a></li>
-                        <li class=""><a href="/Admin/Catalog/Options"><i class="icon-angle-right"></i> Options</a></li>
+                        <li class=""><a href="/Admin/Catalog/Modeloption"><i class="icon-angle-right"></i> Options</a></li>
                         <li class=""><a href="/Admin/Catalog/Size"><i class="icon-angle-right"></i> Size</a></li>
                       
                     </ul>

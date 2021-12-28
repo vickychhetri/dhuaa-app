@@ -21,7 +21,7 @@
         <div class="box dark">
             <header>
                 <div class="icons"><i class="icon-edit"></i></div>
-                <h5>Add New Product Model </h5>
+                <h5>Add New Product Model Option </h5>
                 <div class="toolbar">
                     <ul class="nav">
                         <li>
