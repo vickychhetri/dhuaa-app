@@ -47,10 +47,10 @@
                     </div>
                     <div class="col-md-6">
                         <div>
-                           <span class="bg-success">
-                           Select Area where you want to show your 
-                           product when user search for the product.
-                           </span> 
+                            <p class="bg-success text-white" style="padding:16px;">
+                                Select Area where you want to show your
+                                product when user search for the product.
+                            </p>
                         </div>
 
                     </div>
