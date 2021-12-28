@@ -43,7 +43,7 @@
                             @foreach($notListedProducts as $product)
                             <tr>
                                 <td>
-                                    <p>
+                                <p style="border: 1px solid black;background-color:#eaf0e6;">
                                         <span> {{$product->productName}} </span>
                                         <a href="#" class="btn btn-success"> Move</a>
                                     </p>
@@ -59,7 +59,7 @@
                             </tr>
                             @foreach($listedProducts as $productNot)
                             <tr>
-                            <p>
+                            <p style="border: 1px solid black;background-color:#f9fceb;">
                                         <span> {{$productNot->productName}} </span>
                                         <a href="#" class="btn btn-danger"> Remove</a>
                                     </p>
