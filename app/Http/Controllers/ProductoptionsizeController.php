@@ -18,14 +18,12 @@ class ProductoptionsizeController extends Controller
      */
     public function index()
     {
-        
         $listmodelOpsSize = DB::table('productmodeloptions')
         ->join('productbrandmodels', 'productmodeloptions.modelId', '=', 'productbrandmodels.id')
         ->join('productbrands', 'productbrandmodels.brandId', '=', 'productbrands.id')
         ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
         ->select('productmodeloptions.*','productbrandmodels.model','productbrands.brand','productyears.year')
         ->get();
-        print_r($listmodelOpsSize);
         return view('Admin.Products.Catalog.addSize')
         ->with('ModelOptionSize',$listmodelOpsSize);
     }
@@ -48,7 +46,7 @@ class ProductoptionsizeController extends Controller
      */
     public function store(Request $request)
     {
-        echo $request->sizeName;
+        echo $request->optionSize;
     }
 
     /**
