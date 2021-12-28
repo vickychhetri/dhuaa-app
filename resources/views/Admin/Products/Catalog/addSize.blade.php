@@ -41,7 +41,7 @@
                         <div class="col-lg-8">
                             <select class="form-control" name="modelId">
                                 @foreach($ModelOptionSize as $MODELOption)
-                                <option value="{{$MODEL->id}}"> {{$MODELOption->year}} - {{$MODELOption->brand}} - {{$MODELOption->model}}</option>
+                                <option value="{{$MODELOption->id}}"> {{$MODELOption->year}} - {{$MODELOption->brand}} - {{$MODELOption->model}}</option>
                                 @endforeach
                             </select>
                         </div>
