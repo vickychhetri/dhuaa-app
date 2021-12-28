@@ -26,8 +26,8 @@ class ProductoptionsizeController extends Controller
         ->select('productmodeloptions.*','productbrandmodels.model','productbrands.brand','productyears.year')
         ->get();
         print_r($listmodelOpsSize);
-        // return view('Admin.Products.Catalog.addModelOptionSize')
-        // ->with('ModelOptionSize',$listmodelOpsSize);
+        return view('Admin.Products.Catalog.addSize')
+        ->with('ModelOptionSize',$listmodelOpsSize);
     }
 
     /**
