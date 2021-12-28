@@ -19,8 +19,8 @@ class ProductoptionsizeController extends Controller
     public function index()
     {
         
-        $listmodelOpsSize = DB::table('productoptionsizes')
-        ->join('productbrandmodels', 'productoptionsizes.optionMId', '=', 'productbrandmodels.id')
+        $listmodelOpsSize = DB::table('productmodeloptions')
+        ->join('productbrandmodels', 'productmodeloptions.modelId', '=', 'productbrandmodels.id')
         ->join('productbrands', 'productbrandmodels.brandId', '=', 'productbrands.id')
         ->join('productyears', 'productbrands.yearId', '=', 'productyears.id')
         ->select('productoptionsizes.*','productbrandmodels.model','productbrands.brand','productyears.year')
