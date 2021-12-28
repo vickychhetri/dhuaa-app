@@ -46,16 +46,6 @@
                             </td></tr>
                             @endforeach
                         </table>
-                        <!-- @foreach($ModelOptionSize as $optionsize)
-                                <option value="{{$optionsize->id}}"> {{$optionsize->size}}
-                                    {{$optionsize->optionM}}
-                                    - {{$optionsize->model}} - {{$optionsize->brand}}
-                                    - {{$optionsize->year}} </option>
-                                @endforeach -->
-
-
-
-
                     </div>
                     <div class="col-md-6">
                     <table>
