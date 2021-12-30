@@ -45,7 +45,7 @@
                                 <td>
 
                                     <span style="float: left;"> {{$product->productName}} </span>
-                                    <a href="#" class="btn btn-default" style="float: right;"> Move</a>
+                                    <a href="#" class="btn btn-default" style="float: right;"> <i class="icon-forward"></i></a>
 
                                 </td>
                             </tr>
