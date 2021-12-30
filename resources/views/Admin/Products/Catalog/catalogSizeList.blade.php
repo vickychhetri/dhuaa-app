@@ -46,7 +46,7 @@
                                     <span style="float: left;"> {{$product->productName}} </span>
                                     <form action="/Admin/Catalog/Editor/moveDatatoCatalog" method="get">
                                         <input type="hidden" name="productId" value="{{$product->id}}" />
-                                        <input type="hidden" name="sizeId" value="{{$product->ID}}" />
+                                        <input type="hidden" name="sizeId" value="{{$ID}}" />
                                         <button style="float: right;"> <i class="icon-forward"></i> </button>
                                     </form>
                                 </td>
