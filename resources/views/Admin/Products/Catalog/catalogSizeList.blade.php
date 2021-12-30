@@ -35,24 +35,27 @@
             <div id="div-1" class="accordion-body collapse in body">
                 <div class="row">
                     <div class="col-md-6">
+                        <div style="overflow-y:scroll;height:800px;">
 
-                        <table class="table">
-                            <tr>
-                                <th> Product Not Listed in Catalog</th>
-                            </tr>
-                            @foreach($notListedProducts as $product)
-                            <tr>
-                                <td>
-                                    <span style="float: left;"> {{$product->productName}} </span>
-                                    <form action="/Admin/Catalog/Editor/moveDatatoCatalog" method="get">
-                                        <input type="hidden" name="productId" value="{{$product->id}}" />
-                                        <input type="hidden" name="sizeId" value="{{$ID}}" />
-                                        <button style="float: right;"> <i class="icon-forward"></i> </button>
-                                    </form>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </table>
+
+                            <table class="table">
+                                <tr>
+                                    <th> Product Not Listed in Catalog</th>
+                                </tr>
+                                @foreach($notListedProducts as $product)
+                                <tr>
+                                    <td>
+                                        <span style="float: left;"> {{$product->productName}} </span>
+                                        <form action="/Admin/Catalog/Editor/moveDatatoCatalog" method="get">
+                                            <input type="hidden" name="productId" value="{{$product->id}}" />
+                                            <input type="hidden" name="sizeId" value="{{$ID}}" />
+                                            <button style="float: right;"> <i class="icon-forward"></i> </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </table>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <table class="table">
