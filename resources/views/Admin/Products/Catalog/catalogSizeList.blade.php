@@ -43,7 +43,7 @@
                             @foreach($notListedProducts as $product)
                             <tr>
                                 <td>
-                                    <div style="border: 1px solid black;background-color:#eaf0e6;padding:5px;">
+                                    <div style="border: 1px solid black;background-color:#eaf0e6;padding:16px;">
                                         <span> {{$product->productName}} </span>
                                         <a href="#" class="btn btn-success" style="float: right;"> Move</a>
                                     </div>
