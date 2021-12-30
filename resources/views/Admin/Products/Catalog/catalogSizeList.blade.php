@@ -43,10 +43,12 @@
                             @foreach($notListedProducts as $product)
                             <tr>
                                 <td>
-
                                     <span style="float: left;"> {{$product->productName}} </span>
-                                    <a href="#" class="btn btn-default" style="float: right;"> <i class="icon-forward"></i></a>
-
+                                    <form action="/Admin/Catalog/Editor/moveDatatoCatalog" method="get">
+                                        <input type="hidden" name="productId" value="{{$product->id}}" />
+                                        <input type="hidden" name="sizeId" value="{{$product->ID}}" />
+                                        <button style="float: right;"> <i class="icon-forward"></i> </button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach

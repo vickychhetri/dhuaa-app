@@ -37,6 +37,7 @@ class CatlogproductController extends Controller
         return view('Admin.Products.Catalog.catalogSizeList')
         ->with('listedProducts',$listedProducts)
         ->with('SIZE',$SIZE->size)
+        ->with('ID',$ID)
         ->with('notListedProducts',$notListedProducts);
     }
     public function indexhome()
