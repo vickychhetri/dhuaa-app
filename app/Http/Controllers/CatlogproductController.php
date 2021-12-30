@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Catlogproduct;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\QueryException;
+use App\Http\Controllers\Agentsessionhandler;
+use Exception;
 
 class CatlogproductController extends Controller
 {
@@ -54,6 +57,9 @@ class CatlogproductController extends Controller
         ->with('ModelOptionSize',$listmodeloptionsize);
     }
 
+    public function moveProductToCatalog(){
+
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -72,7 +78,29 @@ class CatlogproductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'productId' => 'required|numeric',
+            'sizeId'=>'required|numeric'
+        ]);
+        try {
+            $database_agent = new Catlogproduct;
+            $database_agent->productId = $request->productId;
+            $database_agent->catalogSizeId = $request->sizeId;
+            //Sesion id :get
+            $agent = new Agentsessionhandler;
+            $database_agent->parentId = $agent->getSessionId();
+            $res = $database_agent->save();
+            if ($res == "1") {
+                return redirect()->back()->with('message', 'Record added Successfully !');
+            }
+        } catch (QueryException $e) {
+            // print($e); 
+            echo "Query Exception !.";
+        } catch (Exception $e) {
+            echo "Exception !.";
+        }
+        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+      
     }
 
     /**
