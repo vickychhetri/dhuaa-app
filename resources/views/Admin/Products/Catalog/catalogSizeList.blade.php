@@ -47,7 +47,8 @@
                                     <td>
                                         <span style="float: left;"> {{$product->productName}} </span>
                                         <form action="/Admin/Catalog/Editor/moveDatatoCatalog" method="post">
-                                            <input type="hidden" name="productId" value="{{$product->id}}" />
+                                        {{csrf_field()}}    
+                                        <input type="hidden" name="productId" value="{{$product->id}}" />
                                             <input type="hidden" name="sizeId" value="{{$ID}}" />
                                             <button style="float: right;"> <i class="icon-forward"></i> </button>
                                         </form>
