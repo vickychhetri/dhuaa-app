@@ -57,8 +57,16 @@ class CatlogproductController extends Controller
         ->with('ModelOptionSize',$listmodeloptionsize);
     }
 
-    public function moveProductToCatalog(){
-
+    public function RemoveProductFromCatalog(Request $request){
+        $request->validate([
+            'productId' => 'required|numeric',
+            'sizeId'=>'required|numeric'
+        ]);
+        Catlogproduct::where('catalogSizeId','=',$request->sizeId)
+        ->where('productId','=',$request->productId)
+        ->firstorfail()
+        ->delete();
+        return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
     }
     /**
      * Show the form for creating a new resource.
@@ -95,11 +103,11 @@ class CatlogproductController extends Controller
             }
         } catch (QueryException $e) {
             // print($e); 
-            echo "Query Exception !.".$e;
+            echo "Query Exception !.";
         } catch (Exception $e) {
-            echo "Exception !.".$e;
+            echo "Exception !.";
         }
-        // return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
+     return redirect()->back()->with('Error', 'Task Fail :: Sorry, Record not added ! ');
       
     }
 

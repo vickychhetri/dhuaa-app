@@ -33,7 +33,7 @@
                 </div>
             </header>
             <div id="div-1" class="accordion-body collapse in body">
-                <div class="row">
+                <div class="row">    
                     <div class="col-md-6">
                         <div style="overflow-y:scroll;height:800px;">
 
@@ -63,7 +63,7 @@
                             <tr>
                                 <th> Product Listed Under Catalog {{$SIZE}}</th>
                             </tr>
-                            @foreach($listedProducts as $productNot)
+                            <!-- @foreach($listedProducts as $productNot)
                             <tr>
                                 <div style="border: 1px solid black;background-color:#f9fceb;padding:5px;">
                                     <span> {{$productNot->productName}} </span>
@@ -71,7 +71,20 @@
 
                                 </div>
                             </tr>
-                            @endforeach
+                            @endforeach -->
+                            @foreach($listedProducts as $productlist)
+                                <tr>
+                                    <td>
+                                        <span style="float: left;"> {{$product->productName}} </span>
+                                        <form action="/Admin/Catalog/Editor/RemoveDatafromCatalog" method="post">
+                                        {{csrf_field()}}    
+                                        <input type="hidden" name="productId" value="{{$productlist->id}}" />
+                                            <input type="hidden" name="sizeId" value="{{$ID}}" />
+                                            <button style="float: right;"> <i class="icon-forward"></i> </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                @endforeach
                         </table>
 
                     </div>
