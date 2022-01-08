@@ -75,7 +75,7 @@
                             @foreach($listedProducts as $productlist)
                                 <tr>
                                     <td>
-                                        <span style="float: left;"> {{$product->productName}} </span>
+                                        <span style="float: left;"> {{$productlist->productName}} </span>
                                         <form action="/Admin/Catalog/Editor/RemoveDatafromCatalog" method="post">
                                         {{csrf_field()}}    
                                         <input type="hidden" name="productId" value="{{$productlist->id}}" />
