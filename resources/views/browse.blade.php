@@ -12,10 +12,38 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="breadcrumbs text-center">
+                <!-- <div class="breadcrumbs text-center">
                     <h1> Browse- {{env('APPLICATION_NAME')}}</h1>
                     <h4>Search Below Now</h4>
+                </div> -->
+
+                <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <select name="Year" class="form-control" id="year">
+                                    <option value="">Select Year</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name="Make" class="form-control" id="make">
+                                    <option value="">Select Make</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name="Model" class="form-control" id="model">
+                                    <option value="">Select Model</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name="Size" class="form-control" id="size">
+                                    <option value="">Select Size</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                
             </div>
         </div>
     </div>
@@ -46,32 +74,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="content text-center">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select name="Year" class="form-control" id="year">
-                                    <option value="">Select Year</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="Make" class="form-control" id="make">
-                                    <option value="">Select Make</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="Model" class="form-control" id="model">
-                                    <option value="">Select Model</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="Size" class="form-control" id="size">
-                                    <option value="">Select Size</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                    //
                 <div class="search-form">
                     <input type="text" name="search" placeholder="Search...">
                     <button type="submit"><i class="fa fa-search"></i></button>
