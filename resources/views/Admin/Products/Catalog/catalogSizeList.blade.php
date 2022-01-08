@@ -80,7 +80,7 @@
                                         {{csrf_field()}}    
                                         <input type="hidden" name="productId" value="{{$productlist->id}}" />
                                             <input type="hidden" name="sizeId" value="{{$ID}}" />
-                                            <button style="float: right;"> <i class="icon-forward"></i> </button>
+                                            <button style="float: right;"> <i class="icon-backward"></i> </button>
                                         </form>
                                     </td>
                                 </tr>
