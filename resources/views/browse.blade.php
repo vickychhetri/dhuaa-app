@@ -22,7 +22,7 @@
 </section>
 <!--End breadcrumb area-->
 <!--Start breadcrumb bottom area--> 
-<section class="breadcrumb-bottom-area">
+<!-- <section class="breadcrumb-bottom-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-5 col-sm-5">
@@ -37,11 +37,11 @@
             </div>
         </div>
     </div>
-</section>    
+</section>     -->
 <!--End breadcrumb bottom area-->
  
 <!--Start notfound content area-->
-<!-- <section class="notfound-content-area">
+<section class="notfound-content-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-</section>       -->
+</section>      
 <!--End notfound content area-->
   
 
