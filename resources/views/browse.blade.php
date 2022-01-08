@@ -8,7 +8,7 @@
 @endsection
 @section('container')
    <!--Start breadcrumb area-->
-<section class="breadcrumb-area">
+<!-- <section class="breadcrumb-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -19,10 +19,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!--End breadcrumb area-->
 <!--Start breadcrumb bottom area--> 
-<!-- <section class="breadcrumb-bottom-area">
+<section class="breadcrumb-bottom-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-5 col-sm-5">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-</section>     -->
+</section>    
 <!--End breadcrumb bottom area-->
  
 <!--Start notfound content area-->
