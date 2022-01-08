@@ -7,7 +7,7 @@
 @section('headercontainer')
 @endsection
 @section('container')
-   <!--Start breadcrumb area-->
+<!--Start breadcrumb area-->
 <section class="breadcrumb-area">
     <div class="container">
         <div class="row">
@@ -21,7 +21,7 @@
     </div>
 </section>
 <!--End breadcrumb area-->
-<!--Start breadcrumb bottom area--> 
+<!--Start breadcrumb bottom area-->
 <section class="breadcrumb-bottom-area">
     <div class="container">
         <div class="row">
@@ -29,7 +29,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><i class="fa fa-angle-right"></i></li>
-                    <li>404</li> 
+                    <li>404</li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-7 col-sm-7">
@@ -37,29 +37,48 @@
             </div>
         </div>
     </div>
-</section>    
+</section>
 <!--End breadcrumb bottom area-->
- 
+
 <!--Start notfound content area-->
 <section class="notfound-content-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="content text-center">
-                    <img src="img/resources/404.png" class="404-icon" alt="Awesome 404 Image">
-                    <h1>Sorry! but we couldnt find this page</h1>
-                   <h4> <b> page is under construction. </b></h4>
-                    <h5>This page you are looking for does not exsist<a href="">Report this?</a></h5>
+                    <div>
+                        <div class="form-group">
+                            <select name="Year" class="form-control" id="year">
+                                <option value="">Select Year</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="Make" class="form-control" id="make">
+                                <option value="">Select Make</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="Model" class="form-control" id="model">
+                                <option value="">Select Model</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="Size" class="form-control" id="size">
+                                <option value="">Select Size</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="search-form">
                         <input type="text" name="search" placeholder="Search...">
-                        <button type="submit"><i class="fa fa-search"></i></button>   
+                        <button type="submit"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>      
+</section>
 <!--End notfound content area-->
-  
+
 
 @endsection
