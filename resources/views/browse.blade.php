@@ -8,18 +8,18 @@
 @endsection
 @section('container')
    <!--Start breadcrumb area-->
-<!-- <section class="breadcrumb-area">
+<section class="breadcrumb-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcrumbs text-center">
-                    <h1> PAGE DOES NOT EXIST;  404 - {{env('APPLICATION_NAME')}}</h1>
-                    <h4>Call to Know us Better</h4>
+                    <h1> Browse- {{env('APPLICATION_NAME')}}</h1>
+                    <h4>Search Below Now</h4>
                 </div>
             </div>
         </div>
     </div>
-</section> -->
+</section>
 <!--End breadcrumb area-->
 <!--Start breadcrumb bottom area--> 
 <section class="breadcrumb-bottom-area">
