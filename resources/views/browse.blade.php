@@ -41,7 +41,7 @@
 <!--End breadcrumb bottom area-->
  
 <!--Start notfound content area-->
-<section class="notfound-content-area">
+<!-- <section class="notfound-content-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-</section>      
+</section>       -->
 <!--End notfound content area-->
   
 
