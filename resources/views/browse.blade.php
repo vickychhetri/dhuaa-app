@@ -18,34 +18,36 @@
                 </div> -->
 
                 <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select name="Year" class="form-control" id="year">
-                                    <option value="">Select Year</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="Make" class="form-control" id="make">
-                                    <option value="">Select Make</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="Model" class="form-control" id="model">
-                                    <option value="">Select Model</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select name="Size" class="form-control" id="size">
-                                    <option value="">Select Size</option>
-                                </select>
-                            </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select name="Year" class="form-control" id="year">
+                                <option value="">Select Year</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="Make" class="form-control" id="make">
+                                <option value="">Select Make</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="Model" class="form-control" id="model">
+                                <option value="">Select Model</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="Size" class="form-control" id="size">
+                                <option value="">Select Size</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-
-                
             </div>
+
+
         </div>
+    </div>
     </div>
 </section>
 <!--End breadcrumb area-->
@@ -75,13 +77,13 @@
             <div class="col-md-12">
                 <div class="content text-center">
                     //
-                <div class="search-form">
-                    <input type="text" name="search" placeholder="Search...">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <div class="search-form">
+                        <input type="text" name="search" placeholder="Search...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <!--End notfound content area-->
