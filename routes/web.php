@@ -48,6 +48,12 @@ Route::get('/Shop', function () {
     return view('shopItem');
 });
 
+
+Route::get('/Browse', function () {
+    return view('browse');
+});
+
+
 Route::get('/Roadside-Services-Onsite-Repair', function () {
     return view('Services.service1');
 });
